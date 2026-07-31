@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatzUI — Tính năng nổi bật</title>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366f1',
+            accent: '#06b6d4'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+  <div class="absolute inset-0 -z-10 overflow-hidden">
+    <div class="absolute top-0 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-primary/20 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 h-[24rem] w-[24rem] rounded-full bg-accent/20 blur-3xl"></div>
+  </div>
+
+  <main class="mx-auto max-w-7xl px-6 py-16">
+    <section class="text-center">
+      <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 backdrop-blur">
+        <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+        Nền tảng bán hàng + chat + AI chạy trực tiếp P2P
+      </div>
+
+      <h1 class="mt-6 text-4xl font-black tracking-tight sm:text-6xl">
+        Tính năng nổi bật của
+        <span class="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">ChatzUI</span>
+      </h1>
+
+      <p class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+        Một nền tảng dựng trang bán hàng, chat thời gian thực, thanh toán và trợ lý AI —
+        tất cả hoạt động trực tiếp trên thiết bị người dùng qua kết nối P2P, không cần hạ tầng server riêng.
+      </p>
+
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#features"
+           class="rounded-2xl bg-primary px-6 py-3 font-semibold text-white shadow-lg shadow-primary/30 transition hover:-translate-y-0.5 hover:bg-indigo-500">
+          Xem tính năng
+        </a>
+        <a href="#architecture"
+           class="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-slate-200 backdrop-blur transition hover:bg-white/10">
+          Kiến trúc P2P
+        </a>
+      </div>
+    </section>
+
+    <section id="features" class="mt-20 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🚀</div>
+        <h3 class="text-xl font-bold">Không cần server riêng</h3>
+        <p class="mt-3 text-slate-300">
+          Sản phẩm, tin nhắn và đơn hàng lưu ngay trên thiết bị người dùng, truyền thẳng qua kết nối P2P.
+          Dù lượng khách tăng mạnh, chi phí hạ tầng của bạn vẫn giữ nguyên.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🧩</div>
+        <h3 class="text-xl font-bold">Kéo-thả dựng trang bán hàng</h3>
+        <p class="mt-3 text-slate-300">
+          15 loại section dựng sẵn như Sản phẩm, Giới thiệu, Bảng giá, FAQ, Đội ngũ, Đánh giá,
+          Blog và Đối tác. Mỗi section có nhiều mẫu hiển thị riêng trên <code class="text-cyan-300">&lt;web-board&gt;</code>.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🤖</div>
+        <h3 class="text-xl font-bold">Trợ lý AI viết nội dung</h3>
+        <p class="mt-3 text-slate-300">
+          <code class="text-cyan-300">&lt;svc-assist&gt;</code> tự sinh mô tả sản phẩm, tiêu đề và nội dung section chỉ từ vài từ khóa,
+          kèm thư viện chủ đề gợi ý theo từng ngành nghề.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🛒</div>
+        <h3 class="text-xl font-bold">Giỏ hàng + thanh toán + hóa đơn</h3>
+        <p class="mt-3 text-slate-300">
+          Khách thêm giỏ, thanh toán qua MoMo QR và nhận hóa đơn ngay trong cùng một khung chat,
+          không cần chuyển trang hay cài thêm ứng dụng.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🎁</div>
+        <h3 class="text-xl font-bold">Mã khuyến mãi có hiệu ứng ăn mừng</h3>
+        <p class="mt-3 text-slate-300">
+          Tạo mã công khai hoặc tặng riêng cho từng khách ngay trong cuộc trò chuyện. Khi mã được dùng,
+          cả hai phía đều thấy hiệu ứng “mưa quà” xuất hiện tức thì.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">💬</div>
+        <h3 class="text-xl font-bold">Chat công khai & riêng tư</h3>
+        <p class="mt-3 text-slate-300">
+          Vừa có phòng trò chuyện chung cho mọi khách đang xem, vừa có luồng nhắn tin riêng 1-1.
+          Ảnh và video cũng được truyền trực tiếp P2P nên không tiêu tốn băng thông máy chủ.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">📹</div>
+        <h3 class="text-xl font-bold">Gọi video/audio 1:1</h3>
+        <p class="mt-3 text-slate-300">
+          Thực hiện cuộc gọi trực tiếp trong bay mà không cần Zoom, Meet hay bất kỳ phần mềm bổ sung nào.
+          Kết nối chạy trên WebRTC giữa hai thiết bị.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🟢</div>
+        <h3 class="text-xl font-bold">Phát hiện online theo thời gian thực</h3>
+        <p class="mt-3 text-slate-300">
+          Hệ thống nhận biết ngay khi người dùng rớt mạng, đóng tab hoặc mất kết nối,
+          thay vì chờ vài phút mới cập nhật trạng thái như nhiều ứng dụng chat khác.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🔄</div>
+        <h3 class="text-xl font-bold">Mạng lưới tự phục hồi</h3>
+        <p class="mt-3 text-slate-300">
+          Tự ghép nối nhiều người cùng lúc, tự thử lại khi có ai đó bị rớt mạng và tự đồng bộ lại đúng
+          những tin nhắn còn thiếu mà người dùng không cần thao tác gì thêm.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">📈</div>
+        <h3 class="text-xl font-bold">Ưu tiên bay có người trực</h3>
+        <p class="mt-3 text-slate-300">
+          Danh sách bay tự động đưa những nơi chủ đang online lên đầu,
+          giúp khách dễ tìm được người bán có thể phản hồi ngay lập tức.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🌐</div>
+        <h3 class="text-xl font-bold">Đa thiết bị, đa ngôn ngữ</h3>
+        <p class="mt-3 text-slate-300">
+          Một tài khoản hoạt động đồng thời trên điện thoại và laptop, hỗ trợ tiếng Việt / tiếng Anh,
+          giao diện sáng / tối và phong cách “spatial” kính mờ hiện đại.
+        </p>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:border-primary/40 hover:bg-white/10">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">🔔</div>
+        <h3 class="text-xl font-bold">Thông báo đẩy ngoài tab</h3>
+        <p class="mt-3 text-slate-300">
+          Khi có tin nhắn mới, trình duyệt sẽ gửi thông báo ngay cả khi bạn đang làm việc ở ứng dụng khác,
+          giúp không bỏ lỡ bất kỳ cuộc trò chuyện nào.
+        </p>
+      </div>
+    </section>
+
+    <section id="architecture" class="mt-24 rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
+      <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm text-cyan-200">
+            ⚡ Kiến trúc khác biệt
+          </div>
+
+          <h2 class="mt-4 text-3xl font-black sm:text-4xl">
+            P2P + WebRTC + AI trong một nền tảng duy nhất
+          </h2>
+
+          <p class="mt-4 text-lg leading-8 text-slate-300">
+            ChatzUI kết hợp dựng landing page, chat thời gian thực, thanh toán, gọi video và trợ lý AI
+            trong cùng một trải nghiệm thống nhất — không cần ghép nhiều dịch vụ rời rạc.
+          </p>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
+              <div class="text-2xl font-black text-primary">0</div>
+              <div class="mt-1 text-sm text-slate-300">Server phụ thuộc lưu trữ tin nhắn</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
+              <div class="text-2xl font-black text-primary">15+</div>
+              <div class="mt-1 text-sm text-slate-300">Section kéo-thả dựng sẵn</div>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-slate-900/60 p-4">
+              <div class="text-2xl font-black text-primary">1:1</div>
+              <div class="mt-1 text-sm text-slate-300">Chat và gọi video trực tiếp</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+          <div class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-400">Luồng hoạt động</div>
+
+          <div class="mt-6 space-y-4">
+            <div class="flex items-start gap-3 rounded-2xl border border-white/5 bg-white/5 p-4">
+              <div class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-xl bg-primary/20 text-primary">1</div>
+              <div>
+                <div class="font-semibold">Dựng trang bằng kéo-thả</div>
+                <div class="text-sm text-slate-300">Chọn section, đổi mẫu hiển thị và xuất bản ngay trên <code class="text-cyan-300">&lt;web-board&gt;</code>.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 rounded-2xl border border-white/5 bg-white/5 p-4">
+              <div class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-xl bg-primary/20 text-primary">2</div>
+              <div>
+                <div class="font-semibold">AI hỗ trợ nội dung</div>
+                <div class="text-sm text-slate-300">Sinh mô tả sản phẩm, tiêu đề và nội dung marketing từ vài từ khóa.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 rounded-2xl border border-white/5 bg-white/5 p-4">
+              <div class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-xl bg-primary/20 text-primary">3</div>
+              <div>
+                <div class="font-semibold">Khách tương tác trực tiếp</div>
+                <div class="text-sm text-slate-300">Chat, gửi media, gọi video, thêm giỏ hàng và thanh toán mà không rời khỏi cuộc trò chuyện.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 rounded-2xl border border-white/5 bg-white/5 p-4">
+              <div class="mt-0.5 flex h-9 w-9 items-center justify-center rounded-xl bg-primary/20 text-primary">4</div>
+              <div>
+                <div class="font-semibold">Mạng P2P tự đồng bộ</div>
+                <div class="text-sm text-slate-300">WebRTC tự phục hồi kết nối và đồng bộ đúng những dữ liệu còn thiếu theo thời gian thực.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-24 text-center">
+      <div class="rounded-[2rem] border border-white/10 bg-gradient-to-r from-primary/20 to-accent/20 p-10 backdrop-blur">
+        <h2 class="text-3xl font-black sm:text-4xl">
+          Sẵn sàng tạo bay bán hàng đầu tiên?
+        </h2>
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-slate-200">
+          Dựng landing page, bật chat thời gian thực, tạo mã giảm giá và nhận thanh toán —
+          tất cả chỉ trong vài phút mà không cần triển khai hạ tầng phức tạp.
+        </p>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="#features"
+             class="rounded-2xl bg-white px-6 py-3 font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-slate-100">
+            Khám phá tính năng
+          </a>
+          <a href="#architecture"
+             class="rounded-2xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white/15">
+            Xem kiến trúc hoạt động
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
