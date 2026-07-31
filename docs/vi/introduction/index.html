@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BxvqaeRw.js"></script>
+    <!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.1.6">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://localhost/docs/vi/introduction/">
+
+<!-- Primary Meta Tags -->
+<title>Tổng quan — Docs • Astro Open Source</title>
+
+<!-- SEO -->
+<meta name="title" content="Tổng quan — Docs • Astro Open Source">
+<meta name="description" content="Giới thiệu về dự án Astro Micro — stack, triết lý, và các hệ thống cốt lõi">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:5000/docs/vi/introduction/">
+<meta property="og:title" content="Tổng quan — Docs">
+<meta property="og:description" content="Giới thiệu về dự án Astro Micro — stack, triết lý, và các hệ thống cốt lõi">
+<meta property="og:image" content="http://localhost/open-graph.png">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:5000/docs/vi/introduction/">
+<meta property="twitter:title" content="Tổng quan — Docs">
+<meta property="twitter:description" content="Giới thiệu về dự án Astro Micro — stack, triết lý, và các hệ thống cốt lõi">
+<meta property="twitter:image" content="http://localhost/open-graph.png">
+
+<!-- RSS auto-discovery -->
+<link rel="alternate" type="application/rss+xml" title="Astro Open Source" href="/rss.xml">
+    <script>
+      (function() {
+        const m = document.cookie.match(/(?:^|; )dark=([^;]*)/);
+        const t = m ? decodeURIComponent(m[1]) : null;
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+      document.addEventListener('astro:before-swap', function(e) {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+      });
+    </script><link rel="stylesheet" href="/assets/css/Base.css">
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/LayoutDoc.css"><style>[data-astro-transition-scope="astro-72f5nukx-1"] { view-transition-name: astro-72f5nukx-1; }@layer astro { ::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+  <body data-astro-transition-scope="astro-72f5nukx-1">
+    <div class="doc-layout">
+
+      <aside class="doc-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-top">
+            <a href="/" class="back-link">← Trang chủ</a>
+            <a href="/docs/en/introduction/" class="lang-switch">EN</a>
+          </div>
+          <span class="doc-label">Documentation</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <details class="nav-group" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giới thiệu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/introduction" class="nav-link active">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/quickstart" class="nav-link">
+                    Bắt đầu nhanh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Bắt đầu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/architecture" class="nav-link">
+                    Kiến trúc hệ thống
+                    
+                  </a><a href="/docs/vi/dataflow" class="nav-link">
+                    Luồng dữ liệu
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Tính năng
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/web-boxs" class="nav-link">
+                    Web Boxs
+                    
+                  </a><a href="/docs/vi/web-board" class="nav-link">
+                    Web Board
+                    
+                  </a><a href="/docs/vi/conductor" class="nav-link">
+                    Conductor
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giao diện &amp; Hoạt ảnh
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/theming" class="nav-link">
+                    Theming
+                    
+                  </a><a href="/docs/vi/animations" class="nav-link">
+                    Hoạt ảnh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Khái niệm chung
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/design-guide" class="nav-link">
+                    Design Guide
+                    
+                  </a><a href="/docs/vi/section-config" class="nav-link">
+                    Cấu hình Section
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Components
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/components" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/components/web-alert" class="nav-link">
+                    web-alert
+                    
+                  </a><a href="/docs/vi/components/web-avatar" class="nav-link">
+                    web-avatar
+                    
+                  </a><a href="/docs/vi/components/web-bg" class="nav-link">
+                    web-bg
+                    
+                  </a><a href="/docs/vi/components/web-breadcrumb" class="nav-link">
+                    web-breadcrumb
+                    
+                  </a><a href="/docs/vi/components/web-button" class="nav-link">
+                    web-button
+                    
+                  </a><a href="/docs/vi/components/web-checkbox" class="nav-link">
+                    web-checkbox
+                    
+                  </a><a href="/docs/vi/components/web-dialog" class="nav-link">
+                    web-dialog
+                    
+                  </a><a href="/docs/vi/components/web-dropdown" class="nav-link">
+                    web-dropdown
+                    
+                  </a><a href="/docs/vi/components/web-expansion" class="nav-link">
+                    web-expansion
+                    
+                  </a><a href="/docs/vi/components/web-fab" class="nav-link">
+                    web-fab
+                    
+                  </a><a href="/docs/vi/components/web-gallery" class="nav-link">
+                    web-gallery
+                    
+                  </a><a href="/docs/vi/components/web-loader" class="nav-link">
+                    web-loader
+                    
+                  </a><a href="/docs/vi/components/web-pagination" class="nav-link">
+                    web-pagination
+                    
+                  </a><a href="/docs/vi/components/web-popover" class="nav-link">
+                    web-popover
+                    
+                  </a><a href="/docs/vi/components/web-pre" class="nav-link">
+                    web-pre
+                    
+                  </a><a href="/docs/vi/components/web-progress" class="nav-link">
+                    web-progress
+                    
+                  </a><a href="/docs/vi/components/web-radio" class="nav-link">
+                    web-radio
+                    
+                  </a><a href="/docs/vi/components/web-rating" class="nav-link">
+                    web-rating
+                    
+                  </a><a href="/docs/vi/components/web-select" class="nav-link">
+                    web-select
+                    
+                  </a><a href="/docs/vi/components/web-slider" class="nav-link">
+                    web-slider
+                    
+                  </a><a href="/docs/vi/components/web-steps" class="nav-link">
+                    web-steps
+                    
+                  </a><a href="/docs/vi/components/web-table" class="nav-link">
+                    web-table
+                    
+                  </a><a href="/docs/vi/components/web-tabs" class="nav-link">
+                    web-tabs
+                    
+                  </a><a href="/docs/vi/components/web-text" class="nav-link">
+                    web-text
+                    
+                  </a><a href="/docs/vi/components/web-toast" class="nav-link">
+                    web-toast
+                    
+                  </a><a href="/docs/vi/components/web-toggle" class="nav-link">
+                    web-toggle
+                    
+                  </a><a href="/docs/vi/components/web-tooltip" class="nav-link">
+                    web-tooltip
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group nav-group--playground" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label nav-group-label--playground">
+                  <svg class="group-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 3l14 9-14 9V3z"></path>
+                    </svg>
+                  Playground
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/ui" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Component UI
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/ui/sandbox" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Sandbox
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/shop" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Shop Cafe
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Basic Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/stable" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Stable Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/spatial" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Spatial Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a>
+              </div>
+            </details>
+        </nav>
+      </aside>
+
+      <main class="doc-main">
+        <article class="doc-prose">
+          <h1 id="tổng-quan">Tổng quan</h1>
+<div class="doc-intro"><p>Astro Micro là một static site framework kết hợp Astro 6, Lit 3 Web Components, Tailwind CSS 4 và DaisyUI — được thiết kế cho tốc độ, khả năng mở rộng và cấu hình khai báo.</p></div>
+<h2 id="đây-là-gì">Đây là gì?</h2>
+<p>Astro Micro là một nền tảng xây dựng trang web tĩnh (static site) hiện đại, được cấu trúc quanh triết lý <strong>“khai báo trước, logic sau”</strong>. Thay vì viết lại HTML cho từng trang, bạn mô tả layout và dữ liệu qua các config object — hệ thống tự động render thành UI.</p>
+<p>Stack công nghệ cốt lõi:</p>
+<ul>
+<li><strong>Astro 6</strong> — framework tạo trang tĩnh (<code>output: &#39;static&#39;</code>), zero-JS by default, hỗ trợ partial hydration</li>
+<li><strong>Lit 3 Web Components</strong> — các component độc lập, đóng gói Shadow DOM, có thể nhúng vào bất kỳ framework nào</li>
+<li><strong>Tailwind CSS 4</strong> — utility-first CSS với cú pháp mới dựa trên CSS variables</li>
+<li><strong>DaisyUI</strong> — bộ theme system qua thuộc tính <code>data-theme=&quot;dark|light&quot;</code> trên thẻ <code>&lt;html&gt;</code></li>
+</ul>
+<h2 id="tại-sao-dùng-astro-micro">Tại sao dùng Astro Micro?</h2>
+<p><strong>Tốc độ</strong>: Astro xuất ra HTML tĩnh hoàn toàn — không có JavaScript overhead khi tải trang. Web Components chỉ hydrate khi cần thiết.</p>
+<p><strong>Componentization</strong>: Lit Web Components là các phần tử DOM chuẩn — không phụ thuộc vào framework, có thể tái sử dụng trong bất kỳ dự án nào, kể cả plain HTML.</p>
+<p><strong>Theming nhất quán</strong>: Toàn bộ màu sắc đi qua CSS variables của DaisyUI. Chuyển dark/light mode chỉ cần thay đổi một thuộc tính HTML.</p>
+<p><strong>Cấu hình khai báo</strong>: Một card grid phức tạp được mô tả qua một <code>baseConfig</code> object thay vì hàng trăm dòng template.</p>
+<h2 id="ba-hệ-thống-cốt-lõi">Ba hệ thống cốt lõi</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Hệ thống</th><th>File nguồn</th><th>Vai trò</th></tr></thead><tbody><tr><td><strong>Conductor</strong></td><td><code>src/services/conductor.js</code></td><td>Shared nanostores atom + IndexedDB cache. Tất cả services chia sẻ một store; mỗi service sở hữu một <code>section</code> trong <code>state.sections[]</code> được đánh key theo id.</td></tr><tr><td><strong>Web Boxs</strong></td><td><code>src/webs/apex/web-boxs.js</code></td><td>Declarative card-grid renderer. Nhận <code>data[]</code> + <code>config</code> object. Config files nằm trong <code>src/sections/&lt;domain&gt;/</code>.</td></tr><tr><td><strong>Micro Services</strong></td><td><code>src/webs/&lt;domain&gt;/svc-*.js</code></td><td>Self-contained Lit custom elements. Mỗi element đọc/ghi section riêng trong conductor và dispatch events xuyên qua Shadow DOM.</td></tr></tbody></table>
+<h3 id="conductor--trung-tâm-dữ-liệu">Conductor — Trung tâm dữ liệu</h3>
+<p>Conductor là một nanostores atom đơn lẻ được chia sẻ bởi toàn bộ ứng dụng. Nó đảm nhiệm việc fetch dữ liệu từ API, cache kết quả vào IndexedDB với TTL tùy chỉnh, và retry tự động khi gặp lỗi mạng.</p>
+<h3 id="web-boxs--grid-renderer">Web Boxs — Grid renderer</h3>
+<p><code>web-boxs</code> là engine render chính. Bạn truyền vào một mảng <code>data</code> và một <code>config</code> object mô tả cách render từng card — số cột, các cell bên trong, style, animation. Component tự xử lý phần còn lại.</p>
+<h3 id="micro-services--domain-logic">Micro Services — Domain logic</h3>
+<p>Các file <code>svc-*.js</code> đóng gói toàn bộ business logic của một tính năng: fetch dữ liệu qua conductor, lắng nghe sự kiện người dùng, cập nhật store, và trigger re-render. Mỗi micro service hoàn toàn độc lập.</p>
+<h2 id="công-nghệ-sử-dụng">Công nghệ sử dụng</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Thư viện</th><th>Phiên bản</th><th>Mục đích</th></tr></thead><tbody><tr><td>Astro</td><td>6.x</td><td>Static site generation, page routing</td></tr><tr><td>Lit</td><td>3.x</td><td>Web Components với reactive properties</td></tr><tr><td>Tailwind CSS</td><td>4.x</td><td>Utility CSS, CSS variables-based</td></tr><tr><td>DaisyUI</td><td>5.x</td><td>Theme system (dark/light và custom themes)</td></tr><tr><td>nanostores</td><td>latest</td><td>Lightweight reactive state management</td></tr><tr><td>IndexedDB</td><td>Web API</td><td>Client-side cache với TTL</td></tr></tbody></table>
+<h2 id="tiếp-theo">Tiếp theo</h2>
+<p>Tiếp tục với <a href="/docs/vi/quickstart">Bắt đầu nhanh</a> để cài đặt và chạy dự án trong vài phút.</p>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>

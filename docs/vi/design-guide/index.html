@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BxvqaeRw.js"></script>
+    <!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.1.6">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://localhost/docs/vi/design-guide/">
+
+<!-- Primary Meta Tags -->
+<title>Design Guide — Docs • Astro Open Source</title>
+
+<!-- SEO -->
+<meta name="title" content="Design Guide — Docs • Astro Open Source">
+<meta name="description" content="Quy trình phân tích mockup và xây dựng baseConfig từ thiết kế">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:5000/docs/vi/design-guide/">
+<meta property="og:title" content="Design Guide — Docs">
+<meta property="og:description" content="Quy trình phân tích mockup và xây dựng baseConfig từ thiết kế">
+<meta property="og:image" content="http://localhost/open-graph.png">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:5000/docs/vi/design-guide/">
+<meta property="twitter:title" content="Design Guide — Docs">
+<meta property="twitter:description" content="Quy trình phân tích mockup và xây dựng baseConfig từ thiết kế">
+<meta property="twitter:image" content="http://localhost/open-graph.png">
+
+<!-- RSS auto-discovery -->
+<link rel="alternate" type="application/rss+xml" title="Astro Open Source" href="/rss.xml">
+    <script>
+      (function() {
+        const m = document.cookie.match(/(?:^|; )dark=([^;]*)/);
+        const t = m ? decodeURIComponent(m[1]) : null;
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+      document.addEventListener('astro:before-swap', function(e) {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+      });
+    </script><link rel="stylesheet" href="/assets/css/Base.css">
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/LayoutDoc.css"><style>[data-astro-transition-scope="astro-72f5nukx-1"] { view-transition-name: astro-72f5nukx-1; }@layer astro { ::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+  <body data-astro-transition-scope="astro-72f5nukx-1">
+    <div class="doc-layout">
+
+      <aside class="doc-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-top">
+            <a href="/" class="back-link">← Trang chủ</a>
+            <a href="/docs/en/design-guide/" class="lang-switch">EN</a>
+          </div>
+          <span class="doc-label">Documentation</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giới thiệu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/introduction" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/quickstart" class="nav-link">
+                    Bắt đầu nhanh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Bắt đầu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/architecture" class="nav-link">
+                    Kiến trúc hệ thống
+                    
+                  </a><a href="/docs/vi/dataflow" class="nav-link">
+                    Luồng dữ liệu
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Tính năng
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/web-boxs" class="nav-link">
+                    Web Boxs
+                    
+                  </a><a href="/docs/vi/web-board" class="nav-link">
+                    Web Board
+                    
+                  </a><a href="/docs/vi/conductor" class="nav-link">
+                    Conductor
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giao diện &amp; Hoạt ảnh
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/theming" class="nav-link">
+                    Theming
+                    
+                  </a><a href="/docs/vi/animations" class="nav-link">
+                    Hoạt ảnh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Khái niệm chung
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/design-guide" class="nav-link active">
+                    Design Guide
+                    
+                  </a><a href="/docs/vi/section-config" class="nav-link">
+                    Cấu hình Section
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Components
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/components" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/components/web-alert" class="nav-link">
+                    web-alert
+                    
+                  </a><a href="/docs/vi/components/web-avatar" class="nav-link">
+                    web-avatar
+                    
+                  </a><a href="/docs/vi/components/web-bg" class="nav-link">
+                    web-bg
+                    
+                  </a><a href="/docs/vi/components/web-breadcrumb" class="nav-link">
+                    web-breadcrumb
+                    
+                  </a><a href="/docs/vi/components/web-button" class="nav-link">
+                    web-button
+                    
+                  </a><a href="/docs/vi/components/web-checkbox" class="nav-link">
+                    web-checkbox
+                    
+                  </a><a href="/docs/vi/components/web-dialog" class="nav-link">
+                    web-dialog
+                    
+                  </a><a href="/docs/vi/components/web-dropdown" class="nav-link">
+                    web-dropdown
+                    
+                  </a><a href="/docs/vi/components/web-expansion" class="nav-link">
+                    web-expansion
+                    
+                  </a><a href="/docs/vi/components/web-fab" class="nav-link">
+                    web-fab
+                    
+                  </a><a href="/docs/vi/components/web-gallery" class="nav-link">
+                    web-gallery
+                    
+                  </a><a href="/docs/vi/components/web-loader" class="nav-link">
+                    web-loader
+                    
+                  </a><a href="/docs/vi/components/web-pagination" class="nav-link">
+                    web-pagination
+                    
+                  </a><a href="/docs/vi/components/web-popover" class="nav-link">
+                    web-popover
+                    
+                  </a><a href="/docs/vi/components/web-pre" class="nav-link">
+                    web-pre
+                    
+                  </a><a href="/docs/vi/components/web-progress" class="nav-link">
+                    web-progress
+                    
+                  </a><a href="/docs/vi/components/web-radio" class="nav-link">
+                    web-radio
+                    
+                  </a><a href="/docs/vi/components/web-rating" class="nav-link">
+                    web-rating
+                    
+                  </a><a href="/docs/vi/components/web-select" class="nav-link">
+                    web-select
+                    
+                  </a><a href="/docs/vi/components/web-slider" class="nav-link">
+                    web-slider
+                    
+                  </a><a href="/docs/vi/components/web-steps" class="nav-link">
+                    web-steps
+                    
+                  </a><a href="/docs/vi/components/web-table" class="nav-link">
+                    web-table
+                    
+                  </a><a href="/docs/vi/components/web-tabs" class="nav-link">
+                    web-tabs
+                    
+                  </a><a href="/docs/vi/components/web-text" class="nav-link">
+                    web-text
+                    
+                  </a><a href="/docs/vi/components/web-toast" class="nav-link">
+                    web-toast
+                    
+                  </a><a href="/docs/vi/components/web-toggle" class="nav-link">
+                    web-toggle
+                    
+                  </a><a href="/docs/vi/components/web-tooltip" class="nav-link">
+                    web-tooltip
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group nav-group--playground" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label nav-group-label--playground">
+                  <svg class="group-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 3l14 9-14 9V3z"></path>
+                    </svg>
+                  Playground
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/ui" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Component UI
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/ui/sandbox" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Sandbox
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/shop" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Shop Cafe
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Basic Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/stable" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Stable Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/spatial" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Spatial Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a>
+              </div>
+            </details>
+        </nav>
+      </aside>
+
+      <main class="doc-main">
+        <article class="doc-prose">
+          <h1 id="design-guide">Design Guide</h1>
+<div class="doc-intro"><p>Từ mockup đến config object trong 5 bước — quy trình có hệ thống để chuyển đổi bất kỳ thiết kế UI nào thành <code>baseConfig</code> hợp lệ.</p></div>
+<h2 id="bước-1--phân-tích-layout">Bước 1 — Phân tích layout</h2>
+<p>Trước khi viết bất kỳ dòng config nào, hãy nhìn vào mockup và tự hỏi <strong>3 câu hỏi</strong>:</p>
+<p><strong>Câu hỏi 1: Có bao nhiêu cột?</strong>
+Đếm số card/item nằm ngang ở desktop. Đây là giá trị <code>lg</code> trong <code>tiers</code>.</p>
+<p><strong>Câu hỏi 2: Các cột chiếm bao nhiêu phần trăm?</strong></p>
+<ul>
+<li>Cột đều nhau → <code>tiers</code> với số nguyên (<code>{ lg: 3 }</code> = 3 cột đều)</li>
+<li>Cột không đều → dùng <code>groupStyle</code> với <code>grid-template-columns</code></li>
+</ul>
+<p><strong>Câu hỏi 3: Các row items có layout như nhau không?</strong></p>
+<ul>
+<li>Tất cả giống nhau → một <code>makes</code> array duy nhất</li>
+<li>Có item đặc biệt (featured) → cần <code>groups</code> để phân nhóm</li>
+</ul>
+<h2 id="bước-2--chọn-render-mode">Bước 2 — Chọn render mode</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Mockup trông như thế nào</th><th>Render mode</th></tr></thead><tbody><tr><td>Grid cards đồng đều</td><td><code>box</code> (mặc định)</td></tr><tr><td>Danh sách dọc mỗi row 1 item</td><td><code>list</code></td></tr><tr><td>Grid nhiều chiều cao khác nhau</td><td><code>masonry</code></td></tr><tr><td>Arrows trái/phải, dots bên dưới</td><td><code>slider</code></td></tr><tr><td>Tabs bên trên, click đổi content</td><td><code>tabs</code></td></tr><tr><td>Numbered steps theo thứ tự</td><td><code>steps</code></td></tr><tr><td>Accordion expand/collapse</td><td><code>expansion</code></td></tr></tbody></table>
+<h2 id="bước-3--xác-định-tiers">Bước 3 — Xác định <code>tiers</code></h2>
+<p><code>tiers</code> định nghĩa số cột ở mỗi breakpoint Tailwind:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#6A737D">// Dạng Object (breakpoint keys)</span></span>
+<span class="line"><span style="color:#B392F0">tiers</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#B392F0">  base</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">,   </span><span style="color:#6A737D">// mobile (default)</span></span>
+<span class="line"><span style="color:#B392F0">  sm</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,     </span><span style="color:#6A737D">// &gt;= 640px</span></span>
+<span class="line"><span style="color:#B392F0">  md</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,     </span><span style="color:#6A737D">// &gt;= 768px</span></span>
+<span class="line"><span style="color:#B392F0">  lg</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">,     </span><span style="color:#6A737D">// &gt;= 1024px</span></span>
+<span class="line"><span style="color:#B392F0">  xl</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8">,     </span><span style="color:#6A737D">// &gt;= 1280px</span></span>
+<span class="line"><span style="color:#9ECBFF">  &#39;2xl&#39;</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8">,  </span><span style="color:#6A737D">// &gt;= 1536px</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// Dạng Array (shorthand: [mobile, tablet, desktop])</span></span>
+<span class="line"><span style="color:#B392F0">tiers</span><span style="color:#E1E4E8">: [</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#6A737D">// tương đương: { base: 1, md: 2, lg: 3 }</span></span></code></pre>
+<p><strong>Ví dụ thực tế:</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Loại trang</th><th><code>tiers</code> phù hợp</th></tr></thead><tbody><tr><td>Blog posts</td><td><code>{ base: 1, md: 2, lg: 3 }</code></td></tr><tr><td>Product grid</td><td><code>{ base: 1, sm: 2, lg: 3, xl: 4 }</code></td></tr><tr><td>Feature highlights</td><td><code>{ base: 1, lg: 3 }</code></td></tr><tr><td>Hero cards</td><td><code>{ base: 1, lg: 2 }</code></td></tr><tr><td>Team members</td><td><code>{ base: 2, md: 3, lg: 4 }</code></td></tr></tbody></table>
+<h2 id="bước-4--xây-dựng-makes">Bước 4 — Xây dựng <code>makes</code></h2>
+<p><code>makes</code> là mảng các cells trong mỗi card. Mỗi cell có 3 thuộc tính chính:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#B392F0">makes</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">  {</span></span>
+<span class="line"><span style="color:#E1E4E8">    opt: </span><span style="color:#9ECBFF">&#39;img&#39;</span><span style="color:#E1E4E8">,           </span><span style="color:#6A737D">// loại cell — xem bảng bên dưới</span></span>
+<span class="line"><span style="color:#E1E4E8">    val: </span><span style="color:#9ECBFF">&#39;thumbnail&#39;</span><span style="color:#E1E4E8">,     </span><span style="color:#6A737D">// key trong data OR giá trị tĩnh</span></span>
+<span class="line"><span style="color:#E1E4E8">    stys: </span><span style="color:#9ECBFF">&#39;aspect-video&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#6A737D">// Tailwind classes hoặc CSS inline</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span></code></pre>
+<h3 id="chọn-opt-phù-hợp">Chọn <code>opt</code> phù hợp</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th><code>opt</code></th><th>Khi nào dùng</th><th>Ví dụ <code>val</code></th></tr></thead><tbody><tr><td><code>img</code></td><td>Ảnh sản phẩm, avatar, thumbnail</td><td><code>&#39;image&#39;</code>, <code>&#39;photo&#39;</code></td></tr><tr><td><code>text</code></td><td>Tiêu đề, mô tả, thông tin</td><td><code>&#39;name&#39;</code>, <code>&#39;description&#39;</code></td></tr><tr><td><code>badge</code></td><td>Trạng thái, label, category</td><td><code>&#39;status&#39;</code>, <code>&#39;Mới&#39;</code></td></tr><tr><td><code>price</code></td><td>Giá tiền (auto format)</td><td><code>&#39;price&#39;</code>, <code>&#39;salePrice&#39;</code></td></tr><tr><td><code>btn</code></td><td>Nút hành động</td><td><code>&#39;Thêm vào giỏ&#39;</code> (tĩnh)</td></tr><tr><td><code>rate</code></td><td>Đánh giá sao</td><td><code>&#39;rating&#39;</code></td></tr><tr><td><code>tag</code></td><td>Danh sách tags</td><td><code>&#39;tags&#39;</code> (array)</td></tr><tr><td><code>action</code></td><td>Nút kết nối conductor</td><td><code>&#39;add-to-cart&#39;</code></td></tr></tbody></table>
+<h3 id="quy-tắc-val">Quy tắc <code>val</code></h3>
+<ul>
+<li><strong>Key trong data</strong>: <code>val: &#39;name&#39;</code> → render <code>item.name</code></li>
+<li><strong>Giá trị tĩnh</strong>: <code>val: &#39;Mua ngay&#39;</code> → render text cố định</li>
+<li><strong>Nested key</strong>: <code>val: &#39;meta.author&#39;</code> → render <code>item.meta.author</code></li>
+</ul>
+<h2 id="bước-5--quy-tắc-màu-bắt-buộc">Bước 5 — Quy tắc màu (bắt buộc)</h2>
+<blockquote>
+<p><strong>KHÔNG hardcode hex/rgb.</strong> CHỈ dùng <code>var(--color-*)</code>.</p>
+</blockquote>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#6A737D">// SAI</span></span>
+<span class="line"><span style="color:#E1E4E8">{ </span><span style="color:#B392F0">opt</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">val</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">stys</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;color: #ef4444; font-weight: bold;&#39;</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">{ </span><span style="color:#B392F0">opt</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;btn&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#B392F0">val</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;Mua&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#B392F0">stys</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;background: #3b82f6;&#39;</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// ĐÚNG</span></span>
+<span class="line"><span style="color:#E1E4E8">{ </span><span style="color:#B392F0">opt</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">val</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">stys</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;text-primary font-bold&#39;</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"><span style="color:#E1E4E8">{ </span><span style="color:#B392F0">opt</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;btn&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#B392F0">val</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;Mua&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#B392F0">stys</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;btn-primary&#39;</span><span style="color:#E1E4E8"> }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">// ĐÚNG — khi cần inline CSS</span></span>
+<span class="line"><span style="color:#E1E4E8">{ </span><span style="color:#B392F0">opt</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">val</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#B392F0">stys</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;color: var(--color-primary); font-weight: 700;&#39;</span><span style="color:#E1E4E8"> }</span></span></code></pre>
+<h2 id="ví-dụ-hoàn-chỉnh-product-card">Ví dụ hoàn chỉnh: Product card</h2>
+<p>Mockup: grid 4 cột (desktop), 2 cột (tablet), 1 cột (mobile). Mỗi card có: ảnh, badge sale, tên, mô tả ngắn, rating, giá, và nút mua.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#6A737D">// src/sections/shop/product-card.config.js</span></span>
+<span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> const</span><span style="color:#79B8FF"> productCardConfig</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#6A737D">  // Bước 3: tiers từ mockup</span></span>
+<span class="line"><span style="color:#E1E4E8">  tiers: { base: </span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">, sm: </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">, lg: </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">, xl: </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Bước 4: makes từ mockup</span></span>
+<span class="line"><span style="color:#E1E4E8">  makes: [</span></span>
+<span class="line"><span style="color:#6A737D">    // Ảnh sản phẩm — aspect ratio vuông</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;img&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;image&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;w-full aspect-square object-cover rounded-lg&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Badge — chỉ hiện nếu có</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;badge&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;badge&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;badge-error text-xs font-semibold&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Tên sản phẩm</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;name&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;font-semibold text-base leading-tight line-clamp-2 mt-2&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Mô tả ngắn</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;description&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;text-sm line-clamp-2&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Đánh giá</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;rate&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;rating&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Giá</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;text-xl font-bold&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#6A737D">    // Nút mua</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#E1E4E8">      opt: </span><span style="color:#9ECBFF">&#39;btn&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      val: </span><span style="color:#9ECBFF">&#39;Thêm vào giỏ&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">      stys: </span><span style="color:#9ECBFF">&#39;btn-primary btn-sm w-full mt-3&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#E1E4E8">  ],</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Groups — padding và gap cho cards</span></span>
+<span class="line"><span style="color:#E1E4E8">  groups: {</span></span>
+<span class="line"><span style="color:#E1E4E8">    gap: </span><span style="color:#9ECBFF">&#39;1.25rem&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    padding: </span><span style="color:#9ECBFF">&#39;1rem&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    radius: </span><span style="color:#9ECBFF">&#39;0.75rem&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    shadow: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">};</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">import</span><span style="color:#E1E4E8"> { productCardConfig } </span><span style="color:#F97583">from</span><span style="color:#9ECBFF"> &#39;@/sections/shop/product-card.config.js&#39;</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-boxs</span></span>
+<span class="line"><span style="color:#B392F0">  dataApi</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;/api/products.json&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  config</span><span style="color:#E1E4E8">={</span><span style="color:#79B8FF">JSON</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">stringify</span><span style="color:#E1E4E8">(productCardConfig)}</span></span>
+<span class="line"><span style="color:#B392F0">  ui</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;modern&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  anime</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;fade-up&quot;</span></span>
+<span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-boxs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="checklist-trước-khi-submit-config">Checklist trước khi submit config</h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Không có hex/rgb nào trong config</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>tiers</code> bao gồm cả breakpoint mobile (<code>base</code>)</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Mỗi cell có <code>opt</code> hợp lệ</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>val</code> là key đúng trong data schema</li>
+<li class="task-list-item"><input type="checkbox" disabled/> <code>sty</code> chỉ dùng Tailwind classes hoặc <code>var(--color-*)</code></li>
+</ul>
+<h2 id="tiếp-theo">Tiếp theo</h2>
+<ul>
+<li><a href="/docs/vi/section-config">Section Config</a> — tổ chức config files trong <code>src/sections/</code></li>
+<li><a href="/docs/vi/web-boxs">Web Boxs</a> — danh sách đầy đủ các <code>opt</code> values</li>
+<li><a href="/docs/vi/theming">Theming</a> — CSS variables có sẵn</li>
+</ul>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>

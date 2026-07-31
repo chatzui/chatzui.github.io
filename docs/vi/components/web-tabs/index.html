@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BxvqaeRw.js"></script>
+    <!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.1.6">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://localhost/docs/vi/components/web-tabs/">
+
+<!-- Primary Meta Tags -->
+<title>web-tabs — Docs • Astro Open Source</title>
+
+<!-- SEO -->
+<meta name="title" content="web-tabs — Docs • Astro Open Source">
+<meta name="description" content="Tabs để chuyển đổi giữa các nội dung">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:5000/docs/vi/components/web-tabs/">
+<meta property="og:title" content="web-tabs — Docs">
+<meta property="og:description" content="Tabs để chuyển đổi giữa các nội dung">
+<meta property="og:image" content="http://localhost/open-graph.png">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:5000/docs/vi/components/web-tabs/">
+<meta property="twitter:title" content="web-tabs — Docs">
+<meta property="twitter:description" content="Tabs để chuyển đổi giữa các nội dung">
+<meta property="twitter:image" content="http://localhost/open-graph.png">
+
+<!-- RSS auto-discovery -->
+<link rel="alternate" type="application/rss+xml" title="Astro Open Source" href="/rss.xml">
+    <script>
+      (function() {
+        const m = document.cookie.match(/(?:^|; )dark=([^;]*)/);
+        const t = m ? decodeURIComponent(m[1]) : null;
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+      document.addEventListener('astro:before-swap', function(e) {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+      });
+    </script><link rel="stylesheet" href="/assets/css/Base.css">
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/LayoutDoc.css"><style>[data-astro-transition-scope="astro-72f5nukx-1"] { view-transition-name: astro-72f5nukx-1; }@layer astro { ::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+  <body data-astro-transition-scope="astro-72f5nukx-1">
+    <div class="doc-layout">
+
+      <aside class="doc-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-top">
+            <a href="/" class="back-link">← Trang chủ</a>
+            <a href="/docs/en/components/web-tabs/" class="lang-switch">EN</a>
+          </div>
+          <span class="doc-label">Documentation</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giới thiệu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/introduction" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/quickstart" class="nav-link">
+                    Bắt đầu nhanh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Bắt đầu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/architecture" class="nav-link">
+                    Kiến trúc hệ thống
+                    
+                  </a><a href="/docs/vi/dataflow" class="nav-link">
+                    Luồng dữ liệu
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Tính năng
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/web-boxs" class="nav-link">
+                    Web Boxs
+                    
+                  </a><a href="/docs/vi/web-board" class="nav-link">
+                    Web Board
+                    
+                  </a><a href="/docs/vi/conductor" class="nav-link">
+                    Conductor
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giao diện &amp; Hoạt ảnh
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/theming" class="nav-link">
+                    Theming
+                    
+                  </a><a href="/docs/vi/animations" class="nav-link">
+                    Hoạt ảnh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Khái niệm chung
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/design-guide" class="nav-link">
+                    Design Guide
+                    
+                  </a><a href="/docs/vi/section-config" class="nav-link">
+                    Cấu hình Section
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Components
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/components" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/components/web-alert" class="nav-link">
+                    web-alert
+                    
+                  </a><a href="/docs/vi/components/web-avatar" class="nav-link">
+                    web-avatar
+                    
+                  </a><a href="/docs/vi/components/web-bg" class="nav-link">
+                    web-bg
+                    
+                  </a><a href="/docs/vi/components/web-breadcrumb" class="nav-link">
+                    web-breadcrumb
+                    
+                  </a><a href="/docs/vi/components/web-button" class="nav-link">
+                    web-button
+                    
+                  </a><a href="/docs/vi/components/web-checkbox" class="nav-link">
+                    web-checkbox
+                    
+                  </a><a href="/docs/vi/components/web-dialog" class="nav-link">
+                    web-dialog
+                    
+                  </a><a href="/docs/vi/components/web-dropdown" class="nav-link">
+                    web-dropdown
+                    
+                  </a><a href="/docs/vi/components/web-expansion" class="nav-link">
+                    web-expansion
+                    
+                  </a><a href="/docs/vi/components/web-fab" class="nav-link">
+                    web-fab
+                    
+                  </a><a href="/docs/vi/components/web-gallery" class="nav-link">
+                    web-gallery
+                    
+                  </a><a href="/docs/vi/components/web-loader" class="nav-link">
+                    web-loader
+                    
+                  </a><a href="/docs/vi/components/web-pagination" class="nav-link">
+                    web-pagination
+                    
+                  </a><a href="/docs/vi/components/web-popover" class="nav-link">
+                    web-popover
+                    
+                  </a><a href="/docs/vi/components/web-pre" class="nav-link">
+                    web-pre
+                    
+                  </a><a href="/docs/vi/components/web-progress" class="nav-link">
+                    web-progress
+                    
+                  </a><a href="/docs/vi/components/web-radio" class="nav-link">
+                    web-radio
+                    
+                  </a><a href="/docs/vi/components/web-rating" class="nav-link">
+                    web-rating
+                    
+                  </a><a href="/docs/vi/components/web-select" class="nav-link">
+                    web-select
+                    
+                  </a><a href="/docs/vi/components/web-slider" class="nav-link">
+                    web-slider
+                    
+                  </a><a href="/docs/vi/components/web-steps" class="nav-link">
+                    web-steps
+                    
+                  </a><a href="/docs/vi/components/web-table" class="nav-link">
+                    web-table
+                    
+                  </a><a href="/docs/vi/components/web-tabs" class="nav-link active">
+                    web-tabs
+                    
+                  </a><a href="/docs/vi/components/web-text" class="nav-link">
+                    web-text
+                    
+                  </a><a href="/docs/vi/components/web-toast" class="nav-link">
+                    web-toast
+                    
+                  </a><a href="/docs/vi/components/web-toggle" class="nav-link">
+                    web-toggle
+                    
+                  </a><a href="/docs/vi/components/web-tooltip" class="nav-link">
+                    web-tooltip
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group nav-group--playground" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label nav-group-label--playground">
+                  <svg class="group-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 3l14 9-14 9V3z"></path>
+                    </svg>
+                  Playground
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/ui" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Component UI
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/ui/sandbox" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Sandbox
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/shop" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Shop Cafe
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Basic Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/stable" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Stable Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/spatial" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Spatial Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a>
+              </div>
+            </details>
+        </nav>
+      </aside>
+
+      <main class="doc-main">
+        <article class="doc-prose">
+          <h1 id="web-tabs">web-tabs</h1>
+<p>Điều hướng tab cho phép người dùng chuyển đổi giữa nhiều nội dung trong cùng một khu vực. Hỗ trợ icon, căn chỉnh và nhiều kích thước.</p>
+<h2 id="khi-nào-dùng">Khi nào dùng</h2>
+<ul>
+<li>Trang chi tiết sản phẩm với các tab Mô tả / Thông số / Đánh giá</li>
+<li>Dashboard với nhiều chế độ xem khác nhau (Tổng quan / Chi tiết / Lịch sử)</li>
+<li>Cài đặt người dùng được nhóm thành các danh mục</li>
+</ul>
+<h2 id="cách-tải">Cách tải</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">script</span><span style="color:#B392F0"> type</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;module&quot;</span><span style="color:#B392F0"> src</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;/src/webs/apex/web-tabs.js&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="props">Props</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Prop</th><th>Kiểu</th><th>Mặc định</th><th>Mô tả</th></tr></thead><tbody><tr><td><code>tabs</code></td><td>array JSON</td><td><code>[]</code></td><td>Cấu hình tab: <code>[{&quot;label&quot;:&quot;...&quot;,&quot;icon&quot;:&quot;...&quot;}]</code>. Trường <code>icon</code> tùy chọn</td></tr><tr><td><code>active</code></td><td>number</td><td><code>0</code></td><td>Index của tab đang hiển thị (bắt đầu từ <code>0</code>)</td></tr><tr><td><code>align</code></td><td>string</td><td><code>&#39;left&#39;</code></td><td>Căn chỉnh thanh tab: <code>left</code> | <code>center</code> | <code>right</code></td></tr><tr><td><code>size</code></td><td>string</td><td><code>&#39;md&#39;</code></td><td>Kích thước tab: <code>sm</code> | <code>md</code> | <code>lg</code></td></tr><tr><td><code>ui</code></td><td>string</td><td><code>&#39;modern&#39;</code></td><td>Biến thể giao diện: <code>modern</code> | <code>spatial</code></td></tr></tbody></table>
+<h2 id="slots">Slots</h2>
+<p>Nội dung mỗi tab được đặt trong slot có tên theo index: <code>slot=&quot;0&quot;</code>, <code>slot=&quot;1&quot;</code>, <code>slot=&quot;2&quot;</code>, v.v.</p>
+<h2 id="ví-dụ-cơ-bản">Ví dụ cơ bản</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-tabs</span><span style="color:#B392F0"> tabs</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[{&quot;label&quot;:&quot;Mô tả&quot;},{&quot;label&quot;:&quot;Thông số&quot;},{&quot;label&quot;:&quot;Đánh giá&quot;}]&#39;</span><span style="color:#B392F0"> active</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span><span style="color:#E1E4E8">&gt;&lt;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;Nội dung mô tả sản phẩm...&lt;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;1&quot;</span><span style="color:#E1E4E8">&gt;&lt;</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;Thông số kỹ thuật...&lt;/</span><span style="color:#85E89D">p</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;2&quot;</span><span style="color:#E1E4E8">&gt;&lt;</span><span style="color:#85E89D">web-rating</span><span style="color:#B392F0"> value</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;4.5&quot;</span><span style="color:#B392F0"> readonly</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-rating</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">web-tabs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="ví-dụ-nâng-cao">Ví dụ nâng cao</h2>
+<p>Tabs có icon, căn giữa, cỡ lớn:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-tabs</span></span>
+<span class="line"><span style="color:#B392F0">  tabs</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[{&quot;label&quot;:&quot;Tổng quan&quot;,&quot;icon&quot;:&quot;📊&quot;},{&quot;label&quot;:&quot;Giao dịch&quot;,&quot;icon&quot;:&quot;💳&quot;},{&quot;label&quot;:&quot;Cài đặt&quot;,&quot;icon&quot;:&quot;⚙️&quot;}]&#39;</span></span>
+<span class="line"><span style="color:#B392F0">  active</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span></span>
+<span class="line"><span style="color:#FDAEB7;font-style:italic">  align</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;center&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  size</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;lg&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">h3</span><span style="color:#E1E4E8">&gt;Tổng quan tài khoản&lt;/</span><span style="color:#85E89D">h3</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">web-progress</span><span style="color:#B392F0"> value</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;75&quot;</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Hồ sơ hoàn thành 75%&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-progress</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;1&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">web-table</span></span>
+<span class="line"><span style="color:#B392F0">      columns</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[{&quot;key&quot;:&quot;date&quot;,&quot;label&quot;:&quot;Ngày&quot;},{&quot;key&quot;:&quot;desc&quot;,&quot;label&quot;:&quot;Mô tả&quot;},{&quot;key&quot;:&quot;amount&quot;,&quot;label&quot;:&quot;Số tiền&quot;}]&#39;</span></span>
+<span class="line"><span style="color:#B392F0">      data</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[{&quot;date&quot;:&quot;24/06&quot;,&quot;desc&quot;:&quot;Mua hàng&quot;,&quot;amount&quot;:&quot;-150.000đ&quot;}]&#39;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;/</span><span style="color:#85E89D">web-table</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;2&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">    &lt;</span><span style="color:#85E89D">web-toggle</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Nhận thông báo email&quot;</span><span style="color:#B392F0"> checked</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-toggle</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">web-tabs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<p>Điều khiển tab bằng JavaScript:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-tabs</span><span style="color:#B392F0"> id</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;my-tabs&quot;</span><span style="color:#B392F0"> tabs</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[{&quot;label&quot;:&quot;Tab A&quot;},{&quot;label&quot;:&quot;Tab B&quot;},{&quot;label&quot;:&quot;Tab C&quot;}]&#39;</span><span style="color:#B392F0"> active</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;0&quot;</span><span style="color:#E1E4E8">&gt;Nội dung A&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;1&quot;</span><span style="color:#E1E4E8">&gt;Nội dung B&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">div</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;2&quot;</span><span style="color:#E1E4E8">&gt;Nội dung C&lt;/</span><span style="color:#85E89D">div</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">web-tabs</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#F97583">  const</span><span style="color:#79B8FF"> tabs</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> document.</span><span style="color:#B392F0">getElementById</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;my-tabs&#39;</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">  tabs.</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;web-tab-change&#39;</span><span style="color:#E1E4E8">, (</span><span style="color:#FFAB70">e</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">    console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;Tab hiện tại:&#39;</span><span style="color:#E1E4E8">, e.detail.index, </span><span style="color:#9ECBFF">&#39;-&#39;</span><span style="color:#E1E4E8">, e.detail.label);</span></span>
+<span class="line"><span style="color:#E1E4E8">  });</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">  // Chuyển tab theo chương trình</span></span>
+<span class="line"><span style="color:#F97583">  function</span><span style="color:#B392F0"> goToTab</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">index</span><span style="color:#E1E4E8">) {</span></span>
+<span class="line"><span style="color:#E1E4E8">    tabs.</span><span style="color:#B392F0">setAttribute</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;active&#39;</span><span style="color:#E1E4E8">, index);</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="sự-kiện">Sự kiện</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Sự kiện</th><th>Khi nào</th><th>Chi tiết</th></tr></thead><tbody><tr><td><code>web-tab-change</code></td><td>Người dùng nhấn vào một tab khác</td><td><code>{ index: number, label: string }</code></td></tr></tbody></table>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#E1E4E8">document.</span><span style="color:#B392F0">querySelector</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;web-tabs&#39;</span><span style="color:#E1E4E8">).</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;web-tab-change&#39;</span><span style="color:#E1E4E8">, (</span><span style="color:#FFAB70">e</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">=&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;Chuyển sang tab:&#39;</span><span style="color:#E1E4E8">, e.detail.index, e.detail.label);</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>

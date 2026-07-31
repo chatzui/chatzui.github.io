@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BxvqaeRw.js"></script>
+    <!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.1.6">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://localhost/docs/vi/components/web-dropdown/">
+
+<!-- Primary Meta Tags -->
+<title>web-dropdown — Docs • Astro Open Source</title>
+
+<!-- SEO -->
+<meta name="title" content="web-dropdown — Docs • Astro Open Source">
+<meta name="description" content="Menu dropdown với items tùy chỉnh">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:5000/docs/vi/components/web-dropdown/">
+<meta property="og:title" content="web-dropdown — Docs">
+<meta property="og:description" content="Menu dropdown với items tùy chỉnh">
+<meta property="og:image" content="http://localhost/open-graph.png">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:5000/docs/vi/components/web-dropdown/">
+<meta property="twitter:title" content="web-dropdown — Docs">
+<meta property="twitter:description" content="Menu dropdown với items tùy chỉnh">
+<meta property="twitter:image" content="http://localhost/open-graph.png">
+
+<!-- RSS auto-discovery -->
+<link rel="alternate" type="application/rss+xml" title="Astro Open Source" href="/rss.xml">
+    <script>
+      (function() {
+        const m = document.cookie.match(/(?:^|; )dark=([^;]*)/);
+        const t = m ? decodeURIComponent(m[1]) : null;
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+      document.addEventListener('astro:before-swap', function(e) {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+      });
+    </script><link rel="stylesheet" href="/assets/css/Base.css">
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/LayoutDoc.css"><style>[data-astro-transition-scope="astro-72f5nukx-1"] { view-transition-name: astro-72f5nukx-1; }@layer astro { ::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+  <body data-astro-transition-scope="astro-72f5nukx-1">
+    <div class="doc-layout">
+
+      <aside class="doc-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-top">
+            <a href="/" class="back-link">← Trang chủ</a>
+            <a href="/docs/en/components/web-dropdown/" class="lang-switch">EN</a>
+          </div>
+          <span class="doc-label">Documentation</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giới thiệu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/introduction" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/quickstart" class="nav-link">
+                    Bắt đầu nhanh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Bắt đầu
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/architecture" class="nav-link">
+                    Kiến trúc hệ thống
+                    
+                  </a><a href="/docs/vi/dataflow" class="nav-link">
+                    Luồng dữ liệu
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Tính năng
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/web-boxs" class="nav-link">
+                    Web Boxs
+                    
+                  </a><a href="/docs/vi/web-board" class="nav-link">
+                    Web Board
+                    
+                  </a><a href="/docs/vi/conductor" class="nav-link">
+                    Conductor
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Giao diện &amp; Hoạt ảnh
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/theming" class="nav-link">
+                    Theming
+                    
+                  </a><a href="/docs/vi/animations" class="nav-link">
+                    Hoạt ảnh
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Khái niệm chung
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/design-guide" class="nav-link">
+                    Design Guide
+                    
+                  </a><a href="/docs/vi/section-config" class="nav-link">
+                    Cấu hình Section
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Components
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/vi/components" class="nav-link">
+                    Tổng quan
+                    
+                  </a><a href="/docs/vi/components/web-alert" class="nav-link">
+                    web-alert
+                    
+                  </a><a href="/docs/vi/components/web-avatar" class="nav-link">
+                    web-avatar
+                    
+                  </a><a href="/docs/vi/components/web-bg" class="nav-link">
+                    web-bg
+                    
+                  </a><a href="/docs/vi/components/web-breadcrumb" class="nav-link">
+                    web-breadcrumb
+                    
+                  </a><a href="/docs/vi/components/web-button" class="nav-link">
+                    web-button
+                    
+                  </a><a href="/docs/vi/components/web-checkbox" class="nav-link">
+                    web-checkbox
+                    
+                  </a><a href="/docs/vi/components/web-dialog" class="nav-link">
+                    web-dialog
+                    
+                  </a><a href="/docs/vi/components/web-dropdown" class="nav-link active">
+                    web-dropdown
+                    
+                  </a><a href="/docs/vi/components/web-expansion" class="nav-link">
+                    web-expansion
+                    
+                  </a><a href="/docs/vi/components/web-fab" class="nav-link">
+                    web-fab
+                    
+                  </a><a href="/docs/vi/components/web-gallery" class="nav-link">
+                    web-gallery
+                    
+                  </a><a href="/docs/vi/components/web-loader" class="nav-link">
+                    web-loader
+                    
+                  </a><a href="/docs/vi/components/web-pagination" class="nav-link">
+                    web-pagination
+                    
+                  </a><a href="/docs/vi/components/web-popover" class="nav-link">
+                    web-popover
+                    
+                  </a><a href="/docs/vi/components/web-pre" class="nav-link">
+                    web-pre
+                    
+                  </a><a href="/docs/vi/components/web-progress" class="nav-link">
+                    web-progress
+                    
+                  </a><a href="/docs/vi/components/web-radio" class="nav-link">
+                    web-radio
+                    
+                  </a><a href="/docs/vi/components/web-rating" class="nav-link">
+                    web-rating
+                    
+                  </a><a href="/docs/vi/components/web-select" class="nav-link">
+                    web-select
+                    
+                  </a><a href="/docs/vi/components/web-slider" class="nav-link">
+                    web-slider
+                    
+                  </a><a href="/docs/vi/components/web-steps" class="nav-link">
+                    web-steps
+                    
+                  </a><a href="/docs/vi/components/web-table" class="nav-link">
+                    web-table
+                    
+                  </a><a href="/docs/vi/components/web-tabs" class="nav-link">
+                    web-tabs
+                    
+                  </a><a href="/docs/vi/components/web-text" class="nav-link">
+                    web-text
+                    
+                  </a><a href="/docs/vi/components/web-toast" class="nav-link">
+                    web-toast
+                    
+                  </a><a href="/docs/vi/components/web-toggle" class="nav-link">
+                    web-toggle
+                    
+                  </a><a href="/docs/vi/components/web-tooltip" class="nav-link">
+                    web-tooltip
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group nav-group--playground" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label nav-group-label--playground">
+                  <svg class="group-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 3l14 9-14 9V3z"></path>
+                    </svg>
+                  Playground
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/ui" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Component UI
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/ui/sandbox" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Sandbox
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/shop" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Shop Cafe
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Basic Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/stable" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Stable Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/spatial" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Spatial Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a>
+              </div>
+            </details>
+        </nav>
+      </aside>
+
+      <main class="doc-main">
+        <article class="doc-prose">
+          <h1 id="web-dropdown">web-dropdown</h1>
+<p>Menu thả xuống được kích hoạt bằng nút trigger. Hỗ trợ danh sách liên kết với icon tùy chọn và căn chỉnh trái/phải.</p>
+<h2 id="khi-nào-dùng">Khi nào dùng</h2>
+<ul>
+<li>Menu hành động theo ngữ cảnh (chỉnh sửa, xóa, chia sẻ) trên một mục dữ liệu</li>
+<li>Menu điều hướng trong header hoặc sidebar</li>
+<li>Nhóm các hành động ít dùng vào một nút để giảm tải giao diện</li>
+</ul>
+<h2 id="cách-tải">Cách tải</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">script</span><span style="color:#B392F0"> type</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;module&quot;</span><span style="color:#B392F0"> src</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;/src/webs/apex/web-dropdown.js&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="props">Props</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Prop</th><th>Kiểu</th><th>Mặc định</th><th>Mô tả</th></tr></thead><tbody><tr><td><code>label</code></td><td>string</td><td><code>&#39;Menu&#39;</code></td><td>Văn bản hiển thị trên nút trigger</td></tr><tr><td><code>items</code></td><td>array JSON</td><td><code>[]</code></td><td>Mảng mục menu: <code>[{ &quot;label&quot;: &quot;Tên&quot;, &quot;href&quot;: &quot;/link&quot;, &quot;icon&quot;: &quot;tên-icon&quot; }]</code>. Trường <code>icon</code> là tùy chọn</td></tr><tr><td><code>align</code></td><td>string</td><td><code>&#39;left&#39;</code></td><td>Căn chỉnh menu: <code>left</code> | <code>right</code></td></tr><tr><td><code>ui</code></td><td>string</td><td><code>&#39;modern&#39;</code></td><td>Biến thể giao diện: <code>modern</code> | <code>spatial</code></td></tr></tbody></table>
+<h2 id="ví-dụ-cơ-bản">Ví dụ cơ bản</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-dropdown</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Tùy chọn&quot;</span><span style="color:#B392F0"> items</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[</span></span>
+<span class="line"><span style="color:#9ECBFF">  {&quot;label&quot;:&quot;Chỉnh sửa&quot;,&quot;href&quot;:&quot;#&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">  {&quot;label&quot;:&quot;Xóa&quot;,&quot;href&quot;:&quot;#&quot;}</span></span>
+<span class="line"><span style="color:#9ECBFF">]&#39;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-dropdown</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="ví-dụ-nâng-cao">Ví dụ nâng cao</h2>
+<p>Dropdown với icon và căn phải:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-dropdown</span></span>
+<span class="line"><span style="color:#B392F0">  label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Tài khoản&quot;</span></span>
+<span class="line"><span style="color:#FDAEB7;font-style:italic">  align</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;right&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  ui</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;spatial&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  items</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Hồ sơ cá nhân&quot;,&quot;href&quot;:&quot;/profile&quot;,&quot;icon&quot;:&quot;user&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Cài đặt&quot;,&quot;href&quot;:&quot;/settings&quot;,&quot;icon&quot;:&quot;settings&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Đăng xuất&quot;,&quot;href&quot;:&quot;/logout&quot;,&quot;icon&quot;:&quot;log-out&quot;}</span></span>
+<span class="line"><span style="color:#9ECBFF">  ]&#39;</span></span>
+<span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-dropdown</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<p>Dropdown menu điều hướng trong header:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">nav</span><span style="color:#B392F0"> style</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;display:flex; gap:16px; align-items:center;&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">web-dropdown</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Sản phẩm&quot;</span><span style="color:#B392F0"> items</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Phần mềm&quot;,&quot;href&quot;:&quot;/products/software&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Dịch vụ&quot;,&quot;href&quot;:&quot;/products/services&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Gói doanh nghiệp&quot;,&quot;href&quot;:&quot;/products/enterprise&quot;}</span></span>
+<span class="line"><span style="color:#9ECBFF">  ]&#39;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-dropdown</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">  &lt;</span><span style="color:#85E89D">web-dropdown</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;Hỗ trợ&quot;</span><span style="color:#B392F0"> items</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&#39;[</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Tài liệu&quot;,&quot;href&quot;:&quot;/docs&quot;},</span></span>
+<span class="line"><span style="color:#9ECBFF">    {&quot;label&quot;:&quot;Liên hệ&quot;,&quot;href&quot;:&quot;/contact&quot;}</span></span>
+<span class="line"><span style="color:#9ECBFF">  ]&#39;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-dropdown</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"><span style="color:#E1E4E8">&lt;/</span><span style="color:#85E89D">nav</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+  <head>
+    <meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BxvqaeRw.js"></script>
+    <!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.1.6">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="http://localhost/docs/en/web-board/">
+
+<!-- Primary Meta Tags -->
+<title>Web Board — Docs • Astro Open Source</title>
+
+<!-- SEO -->
+<meta name="title" content="Web Board — Docs • Astro Open Source">
+<meta name="description" content="Manage multiple sections with web-board">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:5000/docs/en/web-board/">
+<meta property="og:title" content="Web Board — Docs">
+<meta property="og:description" content="Manage multiple sections with web-board">
+<meta property="og:image" content="http://localhost/open-graph.png">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://localhost:5000/docs/en/web-board/">
+<meta property="twitter:title" content="Web Board — Docs">
+<meta property="twitter:description" content="Manage multiple sections with web-board">
+<meta property="twitter:image" content="http://localhost/open-graph.png">
+
+<!-- RSS auto-discovery -->
+<link rel="alternate" type="application/rss+xml" title="Astro Open Source" href="/rss.xml">
+    <script>
+      (function() {
+        const m = document.cookie.match(/(?:^|; )dark=([^;]*)/);
+        const t = m ? decodeURIComponent(m[1]) : null;
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+      document.addEventListener('astro:before-swap', function(e) {
+        const theme = document.documentElement.getAttribute('data-theme');
+        if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+      });
+    </script><link rel="stylesheet" href="/assets/css/Base.css">
+<link rel="stylesheet" href="/assets/css/default.css">
+<link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/LayoutDoc.css"><style>[data-astro-transition-scope="astro-72f5nukx-1"] { view-transition-name: astro-72f5nukx-1; }@layer astro { ::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-72f5nukx-1) { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-72f5nukx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-72f5nukx-1"] { 
+	animation-duration: 0.3s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+  <body data-astro-transition-scope="astro-72f5nukx-1">
+    <div class="doc-layout">
+
+      <aside class="doc-sidebar">
+        <div class="sidebar-header">
+          <div class="sidebar-top">
+            <a href="/" class="back-link">← Home</a>
+            <a href="/docs/vi/web-board/" class="lang-switch">VI</a>
+          </div>
+          <span class="doc-label">Documentation</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Introduction
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/introduction" class="nav-link">
+                    Overview
+                    
+                  </a><a href="/docs/en/quickstart" class="nav-link">
+                    Quick Start
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Getting Started
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/architecture" class="nav-link">
+                    Architecture
+                    
+                  </a><a href="/docs/en/dataflow" class="nav-link">
+                    Data Flow
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Features
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/web-boxs" class="nav-link">
+                    Web Boxs
+                    
+                  </a><a href="/docs/en/web-board" class="nav-link active">
+                    Web Board
+                    
+                  </a><a href="/docs/en/conductor" class="nav-link">
+                    Conductor
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Styles &amp; Animations
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/theming" class="nav-link">
+                    Theming
+                    
+                  </a><a href="/docs/en/animations" class="nav-link">
+                    Animations
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Common Concepts
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/design-guide" class="nav-link">
+                    Design Guide
+                    
+                  </a><a href="/docs/en/section-config" class="nav-link">
+                    Section Config
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group">
+              <summary class="nav-group-summary">
+                <span class="nav-group-label">
+                  
+                  Components
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/docs/en/components" class="nav-link">
+                    Overview
+                    
+                  </a><a href="/docs/en/components/web-alert" class="nav-link">
+                    web-alert
+                    
+                  </a><a href="/docs/en/components/web-avatar" class="nav-link">
+                    web-avatar
+                    
+                  </a><a href="/docs/en/components/web-bg" class="nav-link">
+                    web-bg
+                    
+                  </a><a href="/docs/en/components/web-breadcrumb" class="nav-link">
+                    web-breadcrumb
+                    
+                  </a><a href="/docs/en/components/web-button" class="nav-link">
+                    web-button
+                    
+                  </a><a href="/docs/en/components/web-checkbox" class="nav-link">
+                    web-checkbox
+                    
+                  </a><a href="/docs/en/components/web-dialog" class="nav-link">
+                    web-dialog
+                    
+                  </a><a href="/docs/en/components/web-dropdown" class="nav-link">
+                    web-dropdown
+                    
+                  </a><a href="/docs/en/components/web-expansion" class="nav-link">
+                    web-expansion
+                    
+                  </a><a href="/docs/en/components/web-fab" class="nav-link">
+                    web-fab
+                    
+                  </a><a href="/docs/en/components/web-gallery" class="nav-link">
+                    web-gallery
+                    
+                  </a><a href="/docs/en/components/web-loader" class="nav-link">
+                    web-loader
+                    
+                  </a><a href="/docs/en/components/web-pagination" class="nav-link">
+                    web-pagination
+                    
+                  </a><a href="/docs/en/components/web-popover" class="nav-link">
+                    web-popover
+                    
+                  </a><a href="/docs/en/components/web-pre" class="nav-link">
+                    web-pre
+                    
+                  </a><a href="/docs/en/components/web-progress" class="nav-link">
+                    web-progress
+                    
+                  </a><a href="/docs/en/components/web-radio" class="nav-link">
+                    web-radio
+                    
+                  </a><a href="/docs/en/components/web-rating" class="nav-link">
+                    web-rating
+                    
+                  </a><a href="/docs/en/components/web-select" class="nav-link">
+                    web-select
+                    
+                  </a><a href="/docs/en/components/web-slider" class="nav-link">
+                    web-slider
+                    
+                  </a><a href="/docs/en/components/web-steps" class="nav-link">
+                    web-steps
+                    
+                  </a><a href="/docs/en/components/web-table" class="nav-link">
+                    web-table
+                    
+                  </a><a href="/docs/en/components/web-tabs" class="nav-link">
+                    web-tabs
+                    
+                  </a><a href="/docs/en/components/web-text" class="nav-link">
+                    web-text
+                    
+                  </a><a href="/docs/en/components/web-toast" class="nav-link">
+                    web-toast
+                    
+                  </a><a href="/docs/en/components/web-toggle" class="nav-link">
+                    web-toggle
+                    
+                  </a><a href="/docs/en/components/web-tooltip" class="nav-link">
+                    web-tooltip
+                    
+                  </a>
+              </div>
+            </details><details class="nav-group nav-group--playground" open>
+              <summary class="nav-group-summary">
+                <span class="nav-group-label nav-group-label--playground">
+                  <svg class="group-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 3l14 9-14 9V3z"></path>
+                    </svg>
+                  Playground
+                </span>
+                <svg class="nav-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </summary>
+
+              <div class="nav-items">
+                <a href="/ui" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Component UI
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/ui/sandbox" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Sandbox
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/shop" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Shop Cafe
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Basic Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/stable" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Stable Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a><a href="/landing/spatial" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+                    Spatial Landing Page
+                    <svg class="ext-icon" width="10" height="10" viewBox="0 0 12 12" fill="none">
+                        <path d="M3.5 8.5L8.5 3.5M8.5 3.5H5M8.5 3.5V7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                  </a>
+              </div>
+            </details>
+        </nav>
+      </aside>
+
+      <main class="doc-main">
+        <article class="doc-prose">
+          <h1 id="web-board">Web Board</h1>
+<div class="doc-intro"><p><code>web-board</code> orchestrates multiple <code>web-boxs</code> instances as named sections on a single page. It renders in the light DOM and supports optional drag-and-drop section reordering.</p></div>
+<h2 id="what-web-board-does">What web-board Does</h2>
+<p>While <code>web-boxs</code> renders a single card grid, <code>web-board</code> acts as a page-level layout manager:</p>
+<ul>
+<li>Accepts an array of section configs</li>
+<li>Renders each section as a <code>web-boxs</code> instance</li>
+<li>Provides a shared <code>ui</code>, <code>theme</code>, and <code>mainColors</code> context to all sections</li>
+<li>Optionally allows users to drag and reorder sections</li>
+<li>Uses <strong>light DOM</strong> (not Shadow DOM) so it can be styled from a parent stylesheet</li>
+</ul>
+<h2 id="props">Props</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Prop</th><th>Type</th><th>Default</th><th>Description</th></tr></thead><tbody><tr><td><code>sections</code></td><td>string (JSON)</td><td><code>&#39;[]&#39;</code></td><td>Serialized array of section config objects</td></tr><tr><td><code>ui</code></td><td>string</td><td><code>&#39;modern&#39;</code></td><td>UI variant applied to all sections: <code>modern</code> | <code>spatial</code></td></tr><tr><td><code>theme</code></td><td>string</td><td><code>&#39;&#39;</code></td><td>DaisyUI theme override for all sections</td></tr><tr><td><code>mainColors</code></td><td>string</td><td><code>&#39;&#39;</code></td><td>Pipe-separated 5 colors passed to all child sections</td></tr><tr><td><code>container</code></td><td>boolean</td><td><code>true</code></td><td>Wrap sections in a max-width container</td></tr><tr><td><code>draggable</code></td><td>boolean</td><td><code>false</code></td><td>Enable drag-and-drop section reordering</td></tr></tbody></table>
+<h2 id="sections-schema">Sections Schema</h2>
+<p>Each item in the <code>sections</code> array is a section config object:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#B392F0">  id</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;section-id&#39;</span><span style="color:#E1E4E8">,        </span><span style="color:#6A737D">// unique key — matches conductor section key</span></span>
+<span class="line"><span style="color:#B392F0">  title</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;Section Title&#39;</span><span style="color:#E1E4E8">,  </span><span style="color:#6A737D">// optional display title</span></span>
+<span class="line"><span style="color:#B392F0">  dataApi</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;/api/data.json&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#B392F0">  cacheKey</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;section-id&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#B392F0">  cacheTtl</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">300</span><span style="color:#E1E4E8">,           </span><span style="color:#6A737D">// seconds</span></span>
+<span class="line"><span style="color:#B392F0">  config</span><span style="color:#E1E4E8">: { </span><span style="color:#6A737D">/* baseConfig */</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#B392F0">  anime</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">&#39;fade-up&#39;</span><span style="color:#E1E4E8">,        </span><span style="color:#6A737D">// optional animation class</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h2 id="basic-example-two-sections">Basic Example: Two Sections</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="astro"><code><span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> sections</span><span style="color:#F97583"> =</span><span style="color:#E1E4E8"> [</span></span>
+<span class="line"><span style="color:#E1E4E8">  {</span></span>
+<span class="line"><span style="color:#E1E4E8">    id: </span><span style="color:#9ECBFF">&#39;featured&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    title: </span><span style="color:#9ECBFF">&#39;Featured Products&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    dataApi: </span><span style="color:#9ECBFF">&#39;/api/featured.json&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    cacheKey: </span><span style="color:#9ECBFF">&#39;featured&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    cacheTtl: </span><span style="color:#79B8FF">600</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    config: {</span></span>
+<span class="line"><span style="color:#E1E4E8">      tiers: [{ cols: </span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">, minWidth: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8"> }, { cols: </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">, minWidth: </span><span style="color:#79B8FF">1024</span><span style="color:#E1E4E8"> }],</span></span>
+<span class="line"><span style="color:#E1E4E8">      makes: [</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;image&#39;</span><span style="color:#E1E4E8">, val: </span><span style="color:#9ECBFF">&#39;image&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">,  val: </span><span style="color:#9ECBFF">&#39;name&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8">, val: </span><span style="color:#9ECBFF">&#39;price&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">      ],</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">  {</span></span>
+<span class="line"><span style="color:#E1E4E8">    id: </span><span style="color:#9ECBFF">&#39;new-arrivals&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    title: </span><span style="color:#9ECBFF">&#39;New Arrivals&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    dataApi: </span><span style="color:#9ECBFF">&#39;/api/new.json&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    cacheKey: </span><span style="color:#9ECBFF">&#39;new-arrivals&#39;</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    cacheTtl: </span><span style="color:#79B8FF">300</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    config: {</span></span>
+<span class="line"><span style="color:#E1E4E8">      tiers: [{ cols: </span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">, minWidth: </span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8"> }, { cols: </span><span style="color:#79B8FF">4</span><span style="color:#E1E4E8">, minWidth: </span><span style="color:#79B8FF">1024</span><span style="color:#E1E4E8"> }],</span></span>
+<span class="line"><span style="color:#E1E4E8">      makes: [</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;image&#39;</span><span style="color:#E1E4E8">, val: </span><span style="color:#9ECBFF">&#39;thumbnail&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;text&#39;</span><span style="color:#E1E4E8">,  val: </span><span style="color:#9ECBFF">&#39;title&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">        { opt: </span><span style="color:#9ECBFF">&#39;badge&#39;</span><span style="color:#E1E4E8">, val: </span><span style="color:#9ECBFF">&#39;tag&#39;</span><span style="color:#E1E4E8"> },</span></span>
+<span class="line"><span style="color:#E1E4E8">      ],</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#E1E4E8">];</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-board</span></span>
+<span class="line"><span style="color:#B392F0">  sections</span><span style="color:#E1E4E8">={</span><span style="color:#79B8FF">JSON</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">stringify</span><span style="color:#E1E4E8">(sections)}</span></span>
+<span class="line"><span style="color:#B392F0">  ui</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;modern&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  container</span></span>
+<span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-board</span><span style="color:#E1E4E8">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">script</span><span style="color:#B392F0"> type</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;module&quot;</span><span style="color:#B392F0"> src</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;/src/webs/apex/web-board.js&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">script</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<h2 id="draggable-board">Draggable Board</h2>
+<p>Enable section drag-and-drop with the <code>draggable</code> prop:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-board</span></span>
+<span class="line"><span style="color:#B392F0">  sections</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;...&quot;</span></span>
+<span class="line"><span style="color:#B392F0">  draggable</span></span>
+<span class="line"><span style="color:#B392F0">  ui</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;spatial&quot;</span></span>
+<span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-board</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
+<p>When <code>draggable</code> is enabled, <code>web-board</code> fires a <code>web-board-reorder</code> event whenever sections are rearranged:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="js"><code><span class="line"><span style="color:#E1E4E8">document.</span><span style="color:#B392F0">querySelector</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;web-board&#39;</span><span style="color:#E1E4E8">).</span><span style="color:#B392F0">addEventListener</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;web-board-reorder&#39;</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">e</span><span style="color:#F97583"> =&gt;</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">  console.</span><span style="color:#B392F0">log</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;New order:&#39;</span><span style="color:#E1E4E8">, e.detail.order); </span><span style="color:#6A737D">// array of section ids</span></span>
+<span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
+<h2 id="light-dom-vs-shadow-dom">Light DOM vs Shadow DOM</h2>
+<p><code>web-board</code> deliberately uses the light DOM so that:</p>
+<ul>
+<li>Astro global styles (Tailwind, typography) apply to section titles</li>
+<li>Server-rendered HTML is accessible for SEO</li>
+<li>Section slots can be targeted by page-level CSS</li>
+</ul>
+<p>Child <code>web-boxs</code> instances still use Shadow DOM for encapsulation.</p>
+<h2 id="events">Events</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Event</th><th>When</th><th>Detail</th></tr></thead><tbody><tr><td><code>web-board-reorder</code></td><td>Sections drag-reordered</td><td><code>{ order: string[] }</code> — array of section ids in new order</td></tr></tbody></table>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><a href="/docs/en/web-boxs">Web Boxs</a> — single section card-grid reference</li>
+<li><a href="/docs/en/section-config">Section Config</a> — organizing config files per domain</li>
+<li><a href="/docs/en/conductor">Conductor</a> — how sections fetch and cache data</li>
+</ul>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>
