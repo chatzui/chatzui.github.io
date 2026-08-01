@@ -1,0 +1,1 @@
+import"./web-board.CF5aH5lH.js";
