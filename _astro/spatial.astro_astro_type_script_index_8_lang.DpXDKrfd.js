@@ -1,0 +1,1 @@
+import"./web-rating.CzvwYOF3.js";

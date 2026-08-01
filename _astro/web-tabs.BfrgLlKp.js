@@ -1,0 +1,1 @@
+import"./web-tabs.Dyn4CLfR.js";

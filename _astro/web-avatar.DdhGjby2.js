@@ -1,0 +1,1 @@
+import"./web-avatar.BPCdjdd_.js";
