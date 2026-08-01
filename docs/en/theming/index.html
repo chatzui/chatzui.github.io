@@ -355,12 +355,12 @@
       <main class="doc-main">
         <article class="doc-prose">
           <h1 id="theming">Theming</h1>
-<div class="doc-intro"><p>All colors in Astro Micro flow through DaisyUI CSS variables. Switching themes is a single HTML attribute change — no CSS overrides needed.</p></div>
-<h2 id="daisyui-themes">DaisyUI Themes</h2>
+<div class="doc-intro"><p>All colors in Astro Micro flow through ApexUI CSS variables. Switching themes is a single HTML attribute change — no CSS overrides needed.</p></div>
+<h2 id="apexui-themes">ApexUI Themes</h2>
 <p>Themes are applied via the <code>data-theme</code> attribute on the <code>&lt;html&gt;</code> element:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> data-theme</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;dark&quot;</span><span style="color:#E1E4E8">&gt;   </span><span style="color:#6A737D">&lt;!-- dark mode --&gt;</span></span>
 <span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> data-theme</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;light&quot;</span><span style="color:#E1E4E8">&gt;  </span><span style="color:#6A737D">&lt;!-- light mode --&gt;</span></span></code></pre>
-<p>DaisyUI provides a set of built-in themes and allows custom themes defined in <code>tailwind.config</code>. All color variables update automatically when <code>data-theme</code> changes.</p>
+<p>ApexUI provides a set of built-in themes and allows custom themes defined in <code>tailwind.config</code>. All color variables update automatically when <code>data-theme</code> changes.</p>
 <h2 id="css-variables">CSS Variables</h2>
 <p>Components read from the following CSS variables — always use these, never hardcode colors:</p>
 
@@ -426,13 +426,12 @@
 <span class="line"></span>
 <span class="line"><span style="color:#6A737D">&lt;!-- Wrong — hardcoded values break theme switching --&gt;</span></span>
 <span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-boxs</span><span style="color:#B392F0"> main-colors</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;#3b82f6|#ffffff|#f3f4f6|#e5e7eb|#111827&quot;</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-boxs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
-<h2 id="bgcolor-and-textcolor-props">bgColor and textColor Props</h2>
+<h2 id="textcolor-prop">textColor Prop</h2>
 <p>For quick overrides on individual components:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-boxs</span></span>
-<span class="line"><span style="color:#B392F0">  bg-color</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;var(--color-base-200)&quot;</span></span>
 <span class="line"><span style="color:#B392F0">  text-color</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;var(--color-base-content)&quot;</span></span>
 <span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-boxs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
-<p>Again, only CSS variable references — no hex or rgb values.</p>
+<p>Only CSS variable references — no hex or rgb values. Decorative backgrounds use the <code>bg</code> config field (built via <code>getStyleOpts</code>, rendered through <code>&lt;web-bg&gt;</code>) instead of a flat background-color override.</p>
 <h2 id="color-rule-strict">Color Rule (Strict)</h2>
 <blockquote>
 <p><strong>Only use system CSS variables in any config (<code>makes</code>, <code>stys</code>, <code>groupStyle</code>, etc.). Never hardcode hex/rgb values.</strong></p>

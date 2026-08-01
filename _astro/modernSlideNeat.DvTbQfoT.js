@@ -1,1 +1,0 @@
-import{n as a,t as e}from"./modernSlideNeat.Baj8w8_R.js";export{e as config,a as data};

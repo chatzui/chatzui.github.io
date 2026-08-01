@@ -1,0 +1,1 @@
+import{a as s,i as a,n as r,r as o,t}from"./firestore.Px3GDHid.js";export{a as getFirebaseApp};

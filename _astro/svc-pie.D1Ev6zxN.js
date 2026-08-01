@@ -1,1 +1,0 @@
-import{a as s,c as a,i as e,n as t,o as c,r as m,s as i,t as n,u as o}from"./base.CY8kBA1y.js";i([c,t,s,a,e,m,o]);customElements.get("svc-pie")||customElements.define("svc-pie",class extends n{});

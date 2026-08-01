@@ -355,9 +355,9 @@
       <main class="doc-main">
         <article class="doc-prose">
           <h1 id="theming">Theming</h1>
-<div class="doc-intro"><p>Toàn bộ hệ thống màu sắc đi qua CSS variables của DaisyUI — dark/light mode, custom color props và quy tắc nghiêm ngặt về việc không hardcode màu.</p></div>
-<h2 id="daisyui-theme-system">DaisyUI Theme System</h2>
-<p>Astro Micro dùng DaisyUI để quản lý theme qua thuộc tính <code>data-theme</code> trên thẻ <code>&lt;html&gt;</code>:</p>
+<div class="doc-intro"><p>Toàn bộ hệ thống màu sắc đi qua CSS variables của ApexUI — dark/light mode, custom color props và quy tắc nghiêm ngặt về việc không hardcode màu.</p></div>
+<h2 id="apexui-theme-system">ApexUI Theme System</h2>
+<p>Astro Micro dùng ApexUI để quản lý theme qua thuộc tính <code>data-theme</code> trên thẻ <code>&lt;html&gt;</code>:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#6A737D">&lt;!-- Light mode --&gt;</span></span>
 <span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> data-theme</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;light&quot;</span><span style="color:#E1E4E8">&gt;</span></span>
 <span class="line"></span>
@@ -368,7 +368,7 @@
 <span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">html</span><span style="color:#B392F0"> data-theme</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;cupcake&quot;</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
 <p>Khi <code>data-theme</code> thay đổi, <strong>tất cả CSS variables tự động cập nhật</strong> — không cần viết lại bất kỳ style nào.</p>
 <h2 id="css-variables-cốt-lõi">CSS Variables cốt lõi</h2>
-<p>Các biến này được DaisyUI định nghĩa và luôn có sẵn trong mọi theme:</p>
+<p>Các biến này được ApexUI định nghĩa và luôn có sẵn trong mọi theme:</p>
 
 
 
@@ -439,19 +439,18 @@
 <blockquote>
 <p><strong>Quy tắc nghiêm ngặt</strong>: Chỉ dùng <code>var(--color-*)</code> trong <code>mainColors</code> — không bao giờ truyền hex hoặc rgb trực tiếp.</p>
 </blockquote>
-<h2 id="props-bgcolor-và-textcolor">Props <code>bgColor</code> và <code>textColor</code></h2>
+<h2 id="prop-textcolor">Prop <code>textColor</code></h2>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-boxs</span></span>
-<span class="line"><span style="color:#B392F0">  bgColor</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;var(--color-base-200)&quot;</span></span>
 <span class="line"><span style="color:#B392F0">  textColor</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;var(--color-base-content)&quot;</span></span>
 <span class="line"><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-boxs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
-<p>Các props này áp dụng CSS variables làm background và text color cho toàn bộ component, cho phép tùy chỉnh màu sắc của từng section riêng biệt.</p>
+<p>Prop này áp dụng CSS variable làm text color cho toàn bộ component, cho phép tùy chỉnh màu chữ của từng section riêng biệt. Nền trang trí dùng field <code>bg</code> (build bằng <code>getStyleOpts</code>, render qua <code>&lt;web-bg&gt;</code>) thay vì override màu nền phẳng.</p>
 <h2 id="spatial-ui--glassmorphism">Spatial UI — Glassmorphism</h2>
 <p>Khi <code>ui=&quot;spatial&quot;</code>, component thêm hiệu ứng glassmorphism qua <code>backdrop-filter</code>:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="css"><code><span class="line"><span style="color:#6A737D">/* Được áp dụng khi ui=&quot;spatial&quot; */</span></span>
 <span class="line"><span style="color:#B392F0">.spatial-layer</span><span style="color:#E1E4E8"> {</span></span>
 <span class="line"><span style="color:#79B8FF">  backdrop-filter</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">blur</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">var</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">--core-blur</span><span style="color:#E1E4E8">));</span></span>
-<span class="line"><span style="color:#79B8FF">  background</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">color-mix</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">in</span><span style="color:#79B8FF"> srgb</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">var</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">--color-base-100</span><span style="color:#E1E4E8">) </span><span style="color:#79B8FF">60</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">transparent</span><span style="color:#E1E4E8">);</span></span>
-<span class="line"><span style="color:#79B8FF">  border</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1</span><span style="color:#F97583">px</span><span style="color:#79B8FF"> solid</span><span style="color:#79B8FF"> color-mix</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">in</span><span style="color:#79B8FF"> srgb</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">var</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">--color-base-300</span><span style="color:#E1E4E8">) </span><span style="color:#79B8FF">40</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">transparent</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#79B8FF">  background</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">color-mix</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">in</span><span style="color:#FFAB70"> oklab</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">var</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">--color-base-100</span><span style="color:#E1E4E8">) </span><span style="color:#79B8FF">60</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">transparent</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#79B8FF">  border</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">1</span><span style="color:#F97583">px</span><span style="color:#79B8FF"> solid</span><span style="color:#79B8FF"> color-mix</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">in</span><span style="color:#FFAB70"> oklab</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">var</span><span style="color:#E1E4E8">(</span><span style="color:#FFAB70">--color-base-300</span><span style="color:#E1E4E8">) </span><span style="color:#79B8FF">40</span><span style="color:#F97583">%</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">transparent</span><span style="color:#E1E4E8">);</span></span>
 <span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&lt;</span><span style="color:#85E89D">web-boxs</span><span style="color:#B392F0"> ui</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">&quot;spatial&quot;</span><span style="color:#B392F0"> ...</span><span style="color:#E1E4E8">&gt;&lt;/</span><span style="color:#85E89D">web-boxs</span><span style="color:#E1E4E8">&gt;</span></span></code></pre>
 <p>Biến <code>--core-blur</code> được định nghĩa trong <code>src/styles/themes/default.css</code> và có thể override theo theme.</p>
@@ -491,7 +490,7 @@
 <span class="line"><span style="color:#F97583">  if</span><span style="color:#E1E4E8"> (theme) e.newDocument.documentElement.</span><span style="color:#B392F0">setAttribute</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">&#39;data-theme&#39;</span><span style="color:#E1E4E8">, theme);</span></span>
 <span class="line"><span style="color:#E1E4E8">});</span></span></code></pre>
 <h2 id="custom-theme">Custom Theme</h2>
-<p>Bạn có thể tạo custom DaisyUI theme trong <code>src/styles/themes/</code>:</p>
+<p>Bạn có thể tạo custom ApexUI theme trong <code>src/styles/themes/</code>:</p>
 <pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8;overflow-x:auto" tabindex="0" data-language="css"><code><span class="line"><span style="color:#6A737D">/* src/styles/themes/brand.css */</span></span>
 <span class="line"><span style="color:#E1E4E8">[</span><span style="color:#B392F0">data-theme</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">&quot;brand&quot;</span><span style="color:#E1E4E8">] {</span></span>
 <span class="line"><span style="color:#FFAB70">  --color-primary</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">oklch</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">65</span><span style="color:#F97583">%</span><span style="color:#79B8FF"> 0.22</span><span style="color:#79B8FF"> 260</span><span style="color:#E1E4E8">);</span></span>
@@ -506,7 +505,7 @@
 <ul>
 <li><a href="/docs/vi/animations">Hoạt ảnh</a> — anime classes và hiệu ứng chuyển động</li>
 <li><a href="/docs/vi/design-guide">Design Guide</a> — quy tắc màu trong config</li>
-<li><a href="/docs/vi/web-boxs">Web Boxs</a> — props <code>mainColors</code>, <code>bgColor</code>, <code>textColor</code></li>
+<li><a href="/docs/vi/web-boxs">Web Boxs</a> — props <code>mainColors</code>, <code>textColor</code></li>
 </ul>
         </article>
       </main>
