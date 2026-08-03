@@ -1,0 +1,1 @@
+import{t as r}from"./cardMaverick.CjaXS1m5.js";export{r as config};

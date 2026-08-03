@@ -1,1 +1,0 @@
-import{t as r}from"./cardBase.2ne-Pg9n.js";export{r as config};

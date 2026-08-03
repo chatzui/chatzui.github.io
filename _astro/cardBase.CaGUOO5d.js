@@ -1,0 +1,1 @@
+import{t as r}from"./cardBase.CtwMimQc.js";export{r as config};

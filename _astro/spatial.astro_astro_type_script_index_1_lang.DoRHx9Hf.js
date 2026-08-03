@@ -1,0 +1,1 @@
+import"./web-avatar.FRi1qjYB.js";

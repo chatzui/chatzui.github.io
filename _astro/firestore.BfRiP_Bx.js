@@ -1,0 +1,1 @@
+import{a as s,i as a,n as r,r as o,t}from"./firestore.zYhy6Yow.js";export{t as FirestoreAdapter,r as authFirestoreAdapter,o as firestoreAdapter,a as getFirebaseApp,s as invoicesFirestoreAdapter};
