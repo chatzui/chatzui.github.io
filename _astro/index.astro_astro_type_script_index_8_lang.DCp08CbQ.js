@@ -1,0 +1,1 @@
+import"./web-rating.Dc-1-3du.js";
