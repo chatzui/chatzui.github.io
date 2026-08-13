@@ -1,0 +1,1 @@
+import"./web-board.BPjS72mm.js";
