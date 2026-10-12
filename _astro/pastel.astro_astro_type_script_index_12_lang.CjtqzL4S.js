@@ -1,0 +1,1 @@
+import"./web-tabs.C_eKyH_O.js";

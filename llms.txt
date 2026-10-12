@@ -1,0 +1,18 @@
+# AI Operations
+
+> AI Operations — Starter puts an AI consultant on your website that answers customers 24/7 from your own knowledge (one script tag, loaded over API or MCP). Pro adds an AI Secretary running 9 AI departments, from strategy and marketing to finance.
+
+## AI Operations
+
+- [AI Operations](https://chatzui.com/): Starter: an AI consultant (svc-aide) that answers your customers 24/7 from your own knowledge, embedded with one script tag and loaded over API or MCP. Pro: adds an AI Secretary (svc-talk) running all 9 departments.
+- [AI Operations Guide](https://chatzui.com/system/docs/): How to embed svc-aide on your website, load knowledge from an API or by AI over MCP (one-click install for Claude, Cursor, VS Code), and run the Secretary and 9 departments on Pro.
+- [AI Operations Pricing](https://chatzui.com/system/pricing/): Choose Starter or Pro, pay with PayPal, and manage the plan you bought.
+- [AI Operations knowledge base (JSON)](https://chatzui.com/data/system.json): plans, prices, features and the full guide, in English and Vietnamese
+
+## Legal
+
+- [Terms of Service](https://chatzui.com/system/legal/terms/): These terms are an agreement between you and GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY ("we", "us") for the use of AI Operations at chatzui.com — including the svc-aide consultant, the svc-talk AI Secretary, the AI departments, the MCP server and all related features (the "Service"). By creating an account, buying a plan or using the Service, you agree to these terms, the Privacy Policy, the Billing & Refund Policy, the Acceptable Use Policy and the Data Processing Addendum.
+- [Privacy Policy](https://chatzui.com/system/legal/privacy/): This policy explains how GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY collects, uses, shares and protects personal data when you use AI Operations at chatzui.com, and the rights you have over it.
+- [Billing, Cancellation & Refund Policy](https://chatzui.com/system/legal/refund/): This policy applies to the paid AI Operations Plans (Starter, Pro) purchased at chatzui.com/system/pricing.
+- [Acceptable Use Policy](https://chatzui.com/system/legal/acceptable-use/): This policy applies to everyone using AI Operations, including consultants you embed on your website and any content you load. It supplements the Terms of Service.
+- [Data Processing Addendum (DPA)](https://chatzui.com/system/legal/dpa/): This addendum forms part of the Terms of Service and applies when GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY ("Processor") processes personal data on behalf of a customer ("Customer") — in knowledge bases, work given to the Secretary/departments, and visitors' questions on consultants the Customer embeds on its website. Where it conflicts with the Terms of Service on personal data, this addendum prevails.

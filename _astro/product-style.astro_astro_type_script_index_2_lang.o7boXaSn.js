@@ -1,0 +1,1 @@
+import"./web-boxs-search.C6SS1U_f.js";

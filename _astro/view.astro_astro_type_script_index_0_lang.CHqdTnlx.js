@@ -1,0 +1,1 @@
+import"./svc-everyday.7OW2xyes.js";

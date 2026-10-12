@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="light">
+	<head>
+		<meta name="astro-view-transitions-enabled" content="true">
+<meta name="astro-view-transitions-fallback" content="animate">
+<script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.D6XGqRif.js"></script>
+		<!-- Global Metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.ico">
+<meta name="generator" content="Astro v7.3.5">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://chatzui.com/admin/users/">
+
+<meta name="robots" content="noindex, nofollow">
+
+
+
+
+
+<!-- Primary Meta Tags -->
+<title>Users — Admin • AI Operations</title>
+
+<!-- SEO -->
+<meta name="title" content="Users — Admin • AI Operations">
+<meta name="description" content="Manage users">
+<meta name="author" content="kimthiendung@gmail.com">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chatzui.com/admin/users/">
+<meta property="og:title" content="Users — Admin">
+<meta property="og:description" content="Manage users">
+<meta property="og:image" content="https://chatzui.com/logo.avif">
+
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://chatzui.com/admin/users/">
+<meta property="twitter:title" content="Users — Admin">
+<meta property="twitter:description" content="Manage users">
+<meta property="twitter:image" content="https://chatzui.com/logo.avif">
+
+<!-- RSS auto-discovery -->
+
+		<!-- Theme/lang đã lưu áp trước lần vẽ đầu (chống nháy) + giữ qua chuyển trang SPA — giống Core.astro -->
+		<script>(function(){const themeCookie = "dark";
+const langCookie = "en";
+
+			(function() {
+				const m = document.cookie.match(new RegExp('(?:^|; )' + themeCookie + '=([^;]*)'));
+				const t = m ? decodeURIComponent(m[1]) : null;
+				if (t) document.documentElement.setAttribute('data-theme', t);
+				const lm = document.cookie.match(new RegExp('(?:^|; )' + langCookie + '=([^;]*)'));
+				const l = lm ? decodeURIComponent(lm[1]) : null;
+				if (l) document.documentElement.setAttribute('lang', l);
+			})();
+			document.addEventListener('astro:before-swap', function(e) {
+				const theme = document.documentElement.getAttribute('data-theme');
+				if (theme) e.newDocument.documentElement.setAttribute('data-theme', theme);
+				const lang = document.documentElement.getAttribute('lang');
+				if (lang) e.newDocument.documentElement.setAttribute('lang', lang);
+			});
+		})();</script><link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/_table_@_@astro.css">
+<link rel="stylesheet" href="/assets/css/Mobile.css">
+<link rel="stylesheet" href="/assets/css/CoreMobile.css"><style>[data-astro-transition-scope="astro-6crvxgtd-1"] { view-transition-name: astro-6crvxgtd-1; }@layer astro { ::view-transition-old(astro-6crvxgtd-1) { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(astro-6crvxgtd-1) { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(astro-6crvxgtd-1) { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(astro-6crvxgtd-1) { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6crvxgtd-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6crvxgtd-1"] { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6crvxgtd-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6crvxgtd-1"] { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-6crvxgtd-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-6crvxgtd-1"] { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-6crvxgtd-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-6crvxgtd-1"] { 
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head>
+
+	<body data-astro-transition-scope="astro-6crvxgtd-1" class="bg-base-100">
+		<div id="main-wrap" class="min-h-dvh" style="--layout-tint-a: var(--color-info); --layout-tint-b: var(--color-accent);">
+			<!-- Chừa chỗ cho thanh menu đáy cố định (h-18 + safe area) để nội dung cuối trang không bị che -->
+			<main id="main" class="text-base-content pb-[calc(5.5rem+env(safe-area-inset-bottom,0px))] lg:pb-0 lg:pl-[calc(16rem+12px)]">
+				
+
+	
+	<div class="adm" data-admin-page="users" data-state="loading" data-astro-cid-icepzeoa>
+		<div class="adm-bg" aria-hidden="true" data-astro-cid-icepzeoa></div>
+		<header class="adm-head" data-astro-cid-icepzeoa>
+			<span class="adm-glyph" aria-hidden="true" data-astro-cid-icepzeoa><iconify-icon icon="ri:user-settings-line" data-astro-cid-icepzeoa="true"></iconify-icon></span>
+			<div class="adm-titles" data-astro-cid-icepzeoa>
+				<p class="adm-kicker" data-astro-cid-icepzeoa><span class="i18n-vi">Quản trị</span><span class="i18n-en">Admin</span></p>
+				<h1 data-astro-cid-icepzeoa><span class="i18n-vi">Người dùng</span><span class="i18n-en">Users</span></h1>
+				<p class="adm-desc adm-only-ready" data-astro-cid-icepzeoa><span class="i18n-vi">Quản lý người dùng</span><span class="i18n-en">Manage users</span></p>
+				<p class="adm-desc adm-only-signin" data-astro-cid-icepzeoa><span class="i18n-vi">Đăng nhập để quản lý</span><span class="i18n-en">Sign in to manage</span></p>
+			</div>
+			<!-- Nút tài khoản (khi đã vào được trang): <web-popover> mở hồ sơ — đổi theme / ngôn ngữ, đăng xuất. -->
+			<web-popover class="adm-me-pop" data-admin-pop="true" ui="modern" placement="bottom-end" placementGap="8" data-astro-cid-icepzeoa="true">
+				<button slot="trigger" type="button" class="adm-me" data-admin-me aria-haspopup="dialog" data-astro-cid-icepzeoa>
+					<iconify-icon icon="ri:user-3-line" aria-hidden="true" data-astro-cid-icepzeoa="true"></iconify-icon>
+					<span class="sr-only" data-astro-cid-icepzeoa><span class="i18n-vi">Tài khoản</span><span class="i18n-en">Account</span></span>
+				</button>
+				<div class="adm-account-pop" data-account-pop data-astro-cid-icepzeoa></div>
+			</web-popover>
+		</header>
+
+		<p class="adm-note adm-only-denied" data-astro-cid-icepzeoa><iconify-icon icon="ri:lock-line" aria-hidden="true" data-astro-cid-icepzeoa="true"></iconify-icon><span class="i18n-vi">Tài khoản này không có quyền vào khu quản trị.</span><span class="i18n-en">This account has no access to the admin area.</span></p>
+
+		<!-- Cổng giữa trang khi chưa đăng nhập / không có quyền. Chỉ 1 <svc-account> (nó giữ trạng thái đăng nhập): vào
+		     được trang thì script chuyển nó vào popover của nút tài khoản, đăng xuất thì đưa về đây. -->
+		<section class="adm-panel adm-account" data-account-gate data-astro-cid-icepzeoa>
+			<svc-account ui="pastel" embedded="true" data-astro-cid-icepzeoa="true"></svc-account>
+		</section>
+
+		<section class="adm-panel adm-only-ready" data-admin-panel data-astro-cid-icepzeoa></section>
+	</div>
+
+	<svc-talk id="svc-talk" no-verdict="true" data-astro-transition-persist="svc-talk" data-astro-cid-icepzeoa="true"></svc-talk>
+
+	
+	<script type="module" src="/_astro/_table_.astro_astro_type_script_index_0_lang.DFLtu9k4.js"></script>
+			</main>
+			<aside class="nav-aside" aria-label="Menu" data-astro-cid-3kbjj4km>
+	<!-- Nút theme nằm cạnh link (không lồng trong <a>: phần tử tương tác không được nằm trong link). -->
+	<div class="nav-aside-brand" data-astro-cid-3kbjj4km>
+		<a class="nav-aside-home" href="/admin/users/" data-astro-cid-3kbjj4km>
+			<span class="nav-aside-glyph is-lg" aria-hidden="true" data-astro-cid-3kbjj4km><iconify-icon icon="ri:shield-keyhole-line" data-astro-cid-3kbjj4km="true"></iconify-icon></span>
+			<span class="nav-aside-title" data-astro-cid-3kbjj4km><span class="i18n-vi">Quản trị</span><span class="i18n-en">Admin</span></span>
+		</a>
+		<div class="nav-aside-theme" data-astro-cid-3kbjj4km><label class="theme-toggle swap swap-rotate cursor-pointer" data-astro-cid-hmfxxgml>
+	<!-- checkbox giữ trạng thái — sr-only (không phải display:none) để Tab tới được và trình đọc màn hình đọc được;
+	     role=switch: bật = chế độ tối. Space trên checkbox → click nổi lên <label> → handler bên dưới đổi theme. -->
+	<input type="checkbox" role="switch" class="sr-only" data-astro-cid-hmfxxgml>
+	<span class="sr-only" data-astro-cid-hmfxxgml><span class="i18n-vi">Chế độ tối</span><span class="i18n-en">Dark mode</span></span>
+
+	<!-- sun icon -->
+	<svg aria-hidden="true" class="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-hmfxxgml>
+		<path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" data-astro-cid-hmfxxgml>
+		</path>
+	</svg>
+
+	<!-- moon icon -->
+	<svg aria-hidden="true" class="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-hmfxxgml>
+		<path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" data-astro-cid-hmfxxgml>
+		</path>
+	</svg>
+</label>
+
+
+
+<script type="module" src="/_astro/BtnTheme.astro_astro_type_script_index_0_lang.Dbih5kB4.js"></script></div>
+	</div>
+
+	<nav class="nav-aside-scroll" data-astro-cid-3kbjj4km>
+		<ul class="nav-aside-list" data-astro-cid-3kbjj4km>
+			<li data-astro-cid-3kbjj4km>
+						<a href="/admin/users/" data-nav-href="/admin/users/" class="nav-aside-item is-active" aria-current="page" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:user-settings-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Người dùng</span><span class="i18n-en">Users</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/products/" data-nav-href="/admin/products/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:shopping-bag-3-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Sản phẩm</span><span class="i18n-en">Products</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/orders/" data-nav-href="/admin/orders/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:file-list-3-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Đơn hàng</span><span class="i18n-en">Orders</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/inventory/" data-nav-href="/admin/inventory/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:archive-stack-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Kho hàng</span><span class="i18n-en">Inventory</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/staff/" data-nav-href="/admin/staff/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:team-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Nhân viên</span><span class="i18n-en">Staff</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/posts/" data-nav-href="/admin/posts/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:article-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Bài viết</span><span class="i18n-en">Posts</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/divisions/" data-nav-href="/admin/divisions/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:building-2-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Phòng ban</span><span class="i18n-en">Divisions</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/knowledge/" data-nav-href="/admin/knowledge/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:book-open-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Tri thức</span><span class="i18n-en">Knowledge</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/customers/" data-nav-href="/admin/customers/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:contacts-book-2-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Khách hàng</span><span class="i18n-en">Customers</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/report/" data-nav-href="/admin/report/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:line-chart-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Báo cáo tài chính</span><span class="i18n-en">Finance Report</span></span>
+						</a>
+					</li><li data-astro-cid-3kbjj4km>
+						<a href="/admin/roles/" data-nav-href="/admin/roles/" class="nav-aside-item" data-astro-cid-3kbjj4km>
+							<span class="nav-aside-glyph" aria-hidden="true" data-astro-cid-3kbjj4km>
+								<iconify-icon icon="ri:shield-user-line" data-astro-cid-3kbjj4km="true"></iconify-icon>
+							</span>
+							<span class="nav-aside-text" data-astro-cid-3kbjj4km><span class="i18n-vi">Phân quyền</span><span class="i18n-en">Permissions</span></span>
+						</a>
+					</li>
+		</ul>
+	</nav>
+</aside>
+			<nav class="fixed bottom-0 left-0 right-0 mx-auto rounded-3xl z-[100] bg-base-100/30 backdrop-blur-2xl border-white/10 border-t pb-[env(safe-area-inset-bottom,0px)]  lg:hidden" data-astro-cid-kqnrq3lk>
+	<div class="flex items-center h-18 p-2 text-base-content mnav-bar overflow-x-auto overflow-y-hidden overscroll-x-contain snap-x snap-mandatory" data-astro-cid-kqnrq3lk>
+		<div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/users/" href="/admin/users/" aria-current="page" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all text-primary is-active" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:user-settings-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Người dùng</span><span class="i18n-en">Users</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/products/" href="/admin/products/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:shopping-bag-3-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Sản phẩm</span><span class="i18n-en">Products</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/orders/" href="/admin/orders/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:file-list-3-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Đơn hàng</span><span class="i18n-en">Orders</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/inventory/" href="/admin/inventory/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:archive-stack-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Kho hàng</span><span class="i18n-en">Inventory</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/staff/" href="/admin/staff/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:team-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Nhân viên</span><span class="i18n-en">Staff</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/posts/" href="/admin/posts/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:article-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Bài viết</span><span class="i18n-en">Posts</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/divisions/" href="/admin/divisions/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:building-2-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Phòng ban</span><span class="i18n-en">Divisions</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/knowledge/" href="/admin/knowledge/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:book-open-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Tri thức</span><span class="i18n-en">Knowledge</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/customers/" href="/admin/customers/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:contacts-book-2-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Khách hàng</span><span class="i18n-en">Customers</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/report/" href="/admin/report/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:line-chart-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Báo cáo tài chính</span><span class="i18n-en">Finance Report</span></span>
+							</a>
+				</div><div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk>
+					<a class="group flex flex-col items-center gap-1 w-full cursor-pointer" data-nav-href="/admin/roles/" href="/admin/roles/" data-astro-cid-kqnrq3lk="true">
+								<div aria-hidden="true" class="menu-char-icon transition-all group-hover:scale-110 group-hover:-translate-y-1 opacity-60" data-astro-cid-kqnrq3lk>
+									<iconify-icon icon="ri:shield-user-line" class="text-2xl" data-astro-cid-kqnrq3lk="true"></iconify-icon>
+								</div>
+								
+								<span class="sr-only" data-astro-cid-kqnrq3lk><span class="i18n-vi">Phân quyền</span><span class="i18n-en">Permissions</span></span>
+							</a>
+				</div>
+		
+		<div class="flex-1 shrink-0 min-w-14 snap-start flex justify-center" data-astro-cid-kqnrq3lk><div class="h-12 w-12 flex items-center justify-center rounded-full hover:bg-white/10 transition-all" style="background-color: color-mix(in oklab, var(--color-base-content) 10%, transparent);" data-astro-cid-kqnrq3lk><label class="theme-toggle swap swap-rotate cursor-pointer" data-astro-cid-hmfxxgml>
+	<!-- checkbox giữ trạng thái — sr-only (không phải display:none) để Tab tới được và trình đọc màn hình đọc được;
+	     role=switch: bật = chế độ tối. Space trên checkbox → click nổi lên <label> → handler bên dưới đổi theme. -->
+	<input type="checkbox" role="switch" class="sr-only" data-astro-cid-hmfxxgml>
+	<span class="sr-only" data-astro-cid-hmfxxgml><span class="i18n-vi">Chế độ tối</span><span class="i18n-en">Dark mode</span></span>
+
+	<!-- sun icon -->
+	<svg aria-hidden="true" class="swap-on h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-hmfxxgml>
+		<path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" data-astro-cid-hmfxxgml>
+		</path>
+	</svg>
+
+	<!-- moon icon -->
+	<svg aria-hidden="true" class="swap-off h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-astro-cid-hmfxxgml>
+		<path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" data-astro-cid-hmfxxgml>
+		</path>
+	</svg>
+</label>
+
+
+
+</div></div>
+	</div>
+</nav>
+
+<!-- Menu Dialogs — bottom sheet nổi trên thanh đáy, cao vừa đủ số mục (tối đa 70dvh rồi cuộn), cùng ngôn ngữ
+     panel svc-node: quầng tints [a, b] 2 góc (--layout-tint-a/b của Core/CoreShop `tints`, mặc định info/accent),
+     viền mảnh, glyph vuông gradient a→b. Lớp <dialog> phủ toàn màn (scrim) — chỉ .mnav-sheet mang kích thước. -->
+
+
+
+<script type="module">document.addEventListener("astro:page-load",()=>{document.querySelectorAll(".mnav-bar").forEach(e=>{const t=()=>{const t=e.scrollWidth-e.clientWidth;e.toggleAttribute("data-fade-l",e.scrollLeft>4),e.toggleAttribute("data-fade-r",t-e.scrollLeft>4)},n=e.querySelector(".is-active")?.closest(".snap-start");n&&e.scrollWidth>e.clientWidth&&(e.scrollLeft=n.offsetLeft-(e.clientWidth-n.offsetWidth)/2),t(),e.addEventListener("scroll",t,{passive:!0}),new ResizeObserver(t).observe(e);let o=0;const r=()=>{e.style.scrollSnapType="none",clearTimeout(o),o=window.setTimeout(()=>{e.style.scrollSnapType=""},160)};e.addEventListener("wheel",t=>{const n=e.scrollWidth-e.clientWidth;if(n<=0||Math.abs(t.deltaY)<=Math.abs(t.deltaX))return;const o=e.scrollLeft;t.deltaY<0&&o<=0||t.deltaY>0&&o>=n||(t.preventDefault(),r(),e.scrollLeft=o+(1===t.deltaMode?16*t.deltaY:t.deltaY))},{passive:!1});let s=0,l=0,i=!1,a=-1;e.addEventListener("pointerdown",t=>{"mouse"!==t.pointerType||0!==t.button||e.scrollWidth<=e.clientWidth||(a=t.pointerId,s=t.clientX,l=e.scrollLeft,i=!1)}),e.addEventListener("pointermove",t=>{if(t.pointerId!==a)return;const n=t.clientX-s;!i&&Math.abs(n)<5||(i||(i=!0,e.setPointerCapture(a),e.style.cursor="grabbing"),r(),e.scrollLeft=l-n)});const d=t=>{t.pointerId===a&&(a=-1,e.style.cursor="",e.hasPointerCapture(t.pointerId)&&e.releasePointerCapture(t.pointerId))};e.addEventListener("pointerup",d),e.addEventListener("pointercancel",d),e.addEventListener("click",e=>{i&&(i=!1,e.preventDefault(),e.stopPropagation())},!0),e.addEventListener("dragstart",e=>e.preventDefault())}),document.querySelectorAll("dialog.mobile-nav-dialog").forEach(e=>{const t=e.querySelector(".mnav-sheet"),n=e.querySelector(".dragdown"),o=e.querySelector(".mnav-scroll");if(!t||!o)return;let r=0,s=0,l=!1;t.style.willChange="transform";const i=()=>{e.dataset.closing||(e.dataset.closing="true",Object.assign(t.style,{transition:"transform 0.4s cubic-bezier(0.32,0.72,0,1)",transform:"translate3d(0, 100%, 0)"}),Object.assign(e.style,{transition:"opacity 0.4s ease-out",opacity:"0"}),setTimeout(()=>{e.close(),delete e.dataset.closing,t.style.cssText="will-change: transform",e.style.cssText=""},400))};e.closeAnim=i,e.querySelectorAll('form[method="dialog"]').forEach(e=>{e.addEventListener("submit",e=>{e.preventDefault(),i()})});const a=(e,n)=>{if(l){if(s=e-r,s<0)return l=!1,void(t.style.transition="");n&&n.cancelable&&n.preventDefault(),t.style.transform=`translate3d(0,${s}px,0)`}},d=()=>{l&&(l=!1,s>120?i():Object.assign(t.style,{transition:"transform 0.4s cubic-bezier(0.32,0.72,0,1)",transform:""}),s=0,window.removeEventListener("touchmove",c),window.removeEventListener("touchend",d),window.removeEventListener("mousemove",u),window.removeEventListener("mouseup",d))},c=e=>a(e.touches[0].clientY,e),u=e=>a(e.clientY),v=(e,s)=>{s!==n&&o.scrollTop>0||(r=e,l=!0,t.style.transition="none",window.addEventListener("touchmove",c,{passive:!1}),window.addEventListener("touchend",d),window.addEventListener("mousemove",u),window.addEventListener("mouseup",d))};t.addEventListener("touchstart",e=>v(e.touches[0].clientY,e.target),{passive:!0}),t.addEventListener("mousedown",e=>v(e.clientY,e.target))});const e=()=>{document.querySelectorAll("dialog.mobile-nav-dialog[open]").forEach(e=>{const t=document.querySelector(`[data-dialog-trigger="${e.id}"]`);if(t&&t.getClientRects().length>0)return;e.close();const n=e.querySelector(".mnav-sheet");n&&(n.style.cssText="will-change: transform"),e.style.cssText=""})};window.removeEventListener("resize",window._autoCloseNav),window._autoCloseNav=e,window.addEventListener("resize",e),document.querySelectorAll("[data-dialog-trigger]").forEach(e=>{e.addEventListener("click",t=>{t.preventDefault();const n=e.getAttribute("data-dialog-trigger");if(!n)return;const o=document.getElementById(n);o&&(o.open?o.closeAnim?.():(document.querySelectorAll("dialog.mobile-nav-dialog[open]").forEach(e=>{e!==o&&e.closeAnim?.()}),o.show()))})})});</script>
+		</div>
+	</body>
+</html>

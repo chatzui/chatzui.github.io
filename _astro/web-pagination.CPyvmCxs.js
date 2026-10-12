@@ -1,0 +1,19 @@
+import{a as t,c as e,t as r}from"./lit.DdxAWBw5.js";import{t as o}from"./pastel.ChvuEMaS.js";var a=class extends r{static shadowRootOptions={mode:"open"};static styles=[e(o),e(':host{user-select:none;--core-font:var(--font-sans,"system-ui");display:block}.web-pagination{font-family:var(--core-font);justify-content:center;align-items:center;gap:10px;display:flex}.page-btn{background:var(--color-base-100,#0d0d0d);min-width:36px;height:36px;color:var(--color-base-content,#fff);border:1px solid var(--color-base-300,#393939);cursor:pointer;border-radius:10px;justify-content:center;align-items:center;padding:0 8px;font-size:.875rem;font-weight:500;transition:all .3s cubic-bezier(.4,0,.2,1);display:flex}.page-btn.active{box-shadow:0 4px 15px color-mix(in oklab, var(--color-primary,#34ace0) 50%, transparent);background:var(--color-primary,#34ace0)!important;color:#fff!important;border-color:var(--color-primary,#34ace0)!important}.page-btn:hover:not(:disabled){background:color-mix(in oklab, var(--color-primary,#34ace0) 5%, transparent);color:var(--color-primary,#34ace0);border-color:var(--color-primary,#34ace0);transform:translateY(-2px)}.page-btn:disabled{opacity:.4;cursor:not-allowed}.dots{color:var(--color-base-content,#fff);opacity:.5;padding:0 4px}.arrow{width:20px;height:20px}.pastel.web-pagination .page-btn{background:var(--pastel-corner);border:1px solid var(--pastel-line);border-radius:var(--radius-selector)}.pastel.web-pagination .page-btn:hover:not(:disabled){background:var(--pastel-corner-hi);color:var(--color-base-content);border-color:var(--pastel-line-hi)}.pastel.web-pagination .page-btn.active{box-shadow:var(--pastel-glow);background:var(--pastel-grad)!important;color:var(--pastel-ink)!important;border-color:#0000!important}')];static properties={total:{type:Number},current:{type:Number},pageSize:{type:Number},theme:{type:String},ui:{type:String}};static get uiConfigs(){return{modern:{wrap:"modern web-pagination",btn:"page-btn"},pastel:{wrap:"pastel web-pagination",btn:"page-btn glass-btn"}}}constructor(){super(),this.total=0,this.current=1,this.pageSize=10,this.theme="",this.ui="modern"}updated(t){t.has("theme")&&this.theme?this.setAttribute("data-theme",this.theme):t.has("theme")&&!this.theme&&this.removeAttribute("data-theme")}get _totalPages(){return Math.ceil(this.total/this.pageSize)}_goToPage(t){t<1||t>this._totalPages||t===this.current||(this.current=t,this.dispatchEvent(new CustomEvent("change",{detail:{current:this.current},bubbles:!0,composed:!0})))}_getPages(){const t=this._totalPages,e=this.current,r=[];if(t<=7)for(let o=1;o<=t;o++)r.push(o);else{r.push(1),e>4&&r.push("...");const o=Math.max(2,e-2),a=Math.min(t-1,e+2);for(let t=o;t<=a;t++)r.push(t);e<t-3&&r.push("..."),r.push(t)}return r}render(){if(0===this.total)return t``;const e=this._getPages(),r=this.constructor.uiConfigs[this.ui||"modern"];return t`
+      <div class="${r.wrap}">
+        <button class="${r.btn}" ?disabled=${1===this.current} @click=${()=>this._goToPage(this.current-1)}>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        ${e.map(e=>"..."===e?t`<span class="dots">...</span>`:t`
+            <button 
+              class="${r.btn} ${this.current===e?"active":""}" 
+              @click=${()=>this._goToPage(e)}>
+              ${e}
+            </button>
+          `)}
+
+        <button class="${r.btn}" ?disabled=${this.current===this._totalPages} @click=${()=>this._goToPage(this.current+1)}>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    `}};customElements.get("web-pagination")||customElements.define("web-pagination",a);

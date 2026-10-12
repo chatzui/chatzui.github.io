@@ -1,0 +1,1 @@
+var s="DB_LLMD1",a=new Set(["divisions","talks","know","rel"]),e=e=>a.has(e)?s:"DB_ALL";export{e as n,s as t};
