@@ -1,0 +1,1 @@
+import"./svc-pay.hbhIE5AY.js";
