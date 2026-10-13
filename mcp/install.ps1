@@ -1,7 +1,7 @@
 # AI Operations - install the knowledge MCP server into every AI client found on this machine
 # (Windows PowerShell 5.1+ / PowerShell 7).
 #
-#   $env:MCP_URL='https://<llm-worker>/mcp'; irm https://<site>/mcp/install.ps1 | iex
+#   $env:MCP_URL='https://<llm>/mcp'; irm https://<site>/mcp/install.ps1 | iex
 #
 # Environment:
 #   MCP_URL    (required) the MCP endpoint - in your purchase email and on /system/docs

@@ -1,7 +1,7 @@
 #!/bin/sh
 # AI Operations — install the knowledge MCP server into every AI client found on this machine (macOS / Linux).
 #
-#   curl -fsSL https://<site>/mcp/install.sh | MCP_URL='https://<llm-worker>/mcp' sh
+#   curl -fsSL https://<site>/mcp/install.sh | MCP_URL='https://<llm>/mcp' sh
 #
 # Environment:
 #   MCP_URL    (required) the MCP endpoint — in your purchase email and on /system/docs

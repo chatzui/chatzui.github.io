@@ -101,6 +101,7 @@ const langCookie = "en";
         })
       })()
     </script><link rel="stylesheet" href="/assets/css/_astro_transitions.css">
+<link rel="stylesheet" href="/assets/css/SideMenu.css">
 <link rel="stylesheet" href="/assets/css/docs@_@astro.css">
 <link rel="stylesheet" href="/assets/css/Mobile.css">
 <link rel="stylesheet" href="/assets/css/Optimal.css">
@@ -586,13 +587,66 @@ const langCookie = "en";
 				  
 	<div class="docs mx-auto w-full max-w-6xl px-4 pt-24 pb-20 lg:grid lg:grid-cols-[13rem_minmax(0,1fr)] lg:gap-12" data-astro-cid-l7fpniif>
 		<!-- Mục lục — dính bên trái trên desktop, cuộn ngang trên mobile -->
-		<nav class="docs-toc" aria-label="Contents" data-astro-cid-l7fpniif>
-			<p class="docs-eyebrow" data-astro-cid-l7fpniif><span class="i18n-vi">HƯỚNG DẪN</span><span class="i18n-en">GUIDE</span></p>
-			<ul data-astro-cid-l7fpniif>
-				<li data-astro-cid-l7fpniif><a href="#overview" data-astro-cid-l7fpniif><span class="i18n-vi">Tổng quan</span><span class="i18n-en">Overview</span></a></li><li data-astro-cid-l7fpniif><a href="#quickstart" data-astro-cid-l7fpniif><span class="i18n-vi">Bắt đầu nhanh</span><span class="i18n-en">Quick start</span></a></li><li data-astro-cid-l7fpniif><a href="#embed" data-astro-cid-l7fpniif><span class="i18n-vi">Nhúng trợ lý</span><span class="i18n-en">Embed the assistant</span></a></li><li data-astro-cid-l7fpniif><a href="#knowledge" data-astro-cid-l7fpniif><span class="i18n-vi">Nạp kiến thức</span><span class="i18n-en">Load knowledge</span></a></li><li data-astro-cid-l7fpniif><a href="#mcp" data-astro-cid-l7fpniif><span class="i18n-vi">MCP — cài tự động</span><span class="i18n-en">MCP — auto install</span></a></li><li data-astro-cid-l7fpniif><a href="#pro" data-astro-cid-l7fpniif><span class="i18n-vi">Thư ký &amp; 9 phòng ban</span><span class="i18n-en">Secretary &amp; 9 departments</span></a></li><li data-astro-cid-l7fpniif><a href="#security" data-astro-cid-l7fpniif><span class="i18n-vi">Token &amp; bảo mật</span><span class="i18n-en">Tokens &amp; security</span></a></li><li data-astro-cid-l7fpniif><a href="#troubleshoot" data-astro-cid-l7fpniif><span class="i18n-vi">Khắc phục sự cố</span><span class="i18n-en">Troubleshooting</span></a></li>
-			</ul>
-			<a class="docs-back" href="/" data-astro-cid-l7fpniif><span class="i18n-vi">← AI Operations</span><span class="i18n-en">← AI Operations</span></a>
-		</nav>
+		<aside class="side" aria-label="Contents" data-astro-cid-idhr45ls>
+	<nav class="side-card" data-spy data-astro-cid-idhr45ls>
+		<p class="side-head" data-astro-cid-idhr45ls>
+			<iconify-icon icon="ri:book-2-line" data-astro-cid-idhr45ls="true"></iconify-icon>
+			<span class="i18n-vi">Hướng dẫn</span><span class="i18n-en">Guide</span>
+			<span class="side-count" data-astro-cid-idhr45ls>8</span>
+		</p>
+		<ul data-astro-cid-idhr45ls>
+			<li data-astro-cid-idhr45ls>
+					<a href="#overview" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:compass-3-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Tổng quan</span><span class="i18n-en">Overview</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#quickstart" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:flashlight-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Bắt đầu nhanh</span><span class="i18n-en">Quick start</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#embed" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:code-s-slash-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Nhúng trợ lý</span><span class="i18n-en">Embed the assistant</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#knowledge" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:book-open-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Nạp kiến thức</span><span class="i18n-en">Load knowledge</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#mcp" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:plug-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">MCP — cài tự động</span><span class="i18n-en">MCP — auto install</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#pro" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:team-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Thư ký &amp; 9 phòng ban</span><span class="i18n-en">Secretary &amp; 9 departments</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#security" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:shield-keyhole-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Token &amp; bảo mật</span><span class="i18n-en">Tokens &amp; security</span></span>
+					</a>
+				</li><li data-astro-cid-idhr45ls>
+					<a href="#troubleshoot" data-astro-cid-idhr45ls>
+						<span class="side-glyph" data-astro-cid-idhr45ls><iconify-icon icon="ri:tools-line" data-astro-cid-idhr45ls="true"></iconify-icon></span>
+						<span class="side-label" data-astro-cid-idhr45ls><span class="i18n-vi">Khắc phục sự cố</span><span class="i18n-en">Troubleshooting</span></span>
+					</a>
+				</li>
+		</ul>
+	</nav>
+
+	<a class="side-back" href="/" data-astro-cid-idhr45ls>
+			<iconify-icon icon="ri:arrow-left-line" class="mb-0.5" data-astro-cid-idhr45ls="true"></iconify-icon>
+			AI Operations
+      <span data-astro-cid-idhr45ls></span>
+		</a>
+</aside>
+
+<script type="module" src="/_astro/SideMenu.astro_astro_type_script_index_0_lang.BQiQzZGN.js"></script>
 
 		<article class="docs-body" data-astro-cid-l7fpniif>
 			<header class="docs-hero" data-astro-cid-l7fpniif>
@@ -706,6 +760,12 @@ const langCookie = "en";
 									<td data-astro-cid-l7fpniif><code data-astro-cid-l7fpniif>types</code></td>
 									<td data-astro-cid-l7fpniif><span class="i18n-vi" data-astro-cid-l7fpniif>Chỉ dùng kiến thức các loại này, nối bằng <code>|</code> — vd <code>product|faq</code>. Trống = mọi loại.</span><span class="i18n-en" data-astro-cid-l7fpniif>Only use these knowledge types, joined with <code>|</code> — e.g. <code>product|faq</code>. Empty = every type.</span></td>
 								</tr><tr data-astro-cid-l7fpniif>
+									<td data-astro-cid-l7fpniif><code data-astro-cid-l7fpniif>app</code></td>
+									<td data-astro-cid-l7fpniif><span class="i18n-vi" data-astro-cid-l7fpniif>Site của trợ lý (vd <code>shop.com</code>). Bỏ trống = tên miền trang đang chạy. Kiến thức gắn site chỉ trả lời trên đúng site đó — mọi ngành của site dùng chung.</span><span class="i18n-en" data-astro-cid-l7fpniif>The assistant's site (e.g. <code>shop.com</code>). Empty = the domain of the page it runs on. Knowledge tied to a site answers only there — shared by every sector of that site.</span></td>
+								</tr><tr data-astro-cid-l7fpniif>
+									<td data-astro-cid-l7fpniif><code data-astro-cid-l7fpniif>only-self</code></td>
+									<td data-astro-cid-l7fpniif><span class="i18n-vi" data-astro-cid-l7fpniif>CHỈ trả lời từ kiến thức riêng của site này (bỏ kiến thức dùng chung). Kiến thức nạp qua ⚙ của trợ lý này tự gắn site (ẩn Loại và Dùng cho).</span><span class="i18n-en" data-astro-cid-l7fpniif>Answer ONLY from this site's own knowledge (no shared rows). Knowledge loaded through this assistant's ⚙ is tied to the site automatically (Type and Used by are hidden).</span></td>
+								</tr><tr data-astro-cid-l7fpniif>
 									<td data-astro-cid-l7fpniif><code data-astro-cid-l7fpniif>embedded</code></td>
 									<td data-astro-cid-l7fpniif><span class="i18n-vi" data-astro-cid-l7fpniif>Không có nút nổi — chỉ khung chat, lấp đầy phần tử chứa nó.</span><span class="i18n-en" data-astro-cid-l7fpniif>No floating button — just the chat panel, filling its container.</span></td>
 								</tr>
@@ -816,7 +876,7 @@ const langCookie = "en";
 					<span class="i18n-vi" data-astro-cid-l7fpniif>MCP server của bạn chạy kiểu <b data-astro-cid-l7fpniif>Streamable HTTP</b>, xác thực bằng <code data-astro-cid-l7fpniif>Authorization: Bearer MCP_TOKEN</code>. Dán token (hoặc đăng nhập để cấp token mới điền sẵn), rồi chọn client — <b data-astro-cid-l7fpniif>token không rời trình duyệt này</b>.</span>
 					<span class="i18n-en" data-astro-cid-l7fpniif>Your MCP server speaks <b data-astro-cid-l7fpniif>Streamable HTTP</b>, authenticated with <code data-astro-cid-l7fpniif>Authorization: Bearer MCP_TOKEN</code>. Paste the token (or sign in to issue a new one, filled in for you), then pick a client — <b data-astro-cid-l7fpniif>the token never leaves this browser</b>.</span>
 				</p>
-				<svc-mcp-install mcp-url="https://llm-worker.phivushop.workers.dev/mcp" site-url="https://chatzui.com" data-astro-cid-l7fpniif="true"></svc-mcp-install>
+				<svc-mcp-install mcp-url="https://llm.chatzui.workers.dev/mcp" site-url="https://chatzui.com" data-astro-cid-l7fpniif="true"></svc-mcp-install>
 
 				<h3 data-astro-cid-l7fpniif><span class="i18n-vi">Các tool</span><span class="i18n-en">Tools</span></h3>
 				<p class="docs-dim" data-astro-cid-l7fpniif>
@@ -906,7 +966,8 @@ const langCookie = "en";
 					<li data-astro-cid-l7fpniif><span class="i18n-vi">Giữ MCP_TOKEN như mật khẩu: ai có nó đều nạp / xoá được kiến thức của bạn. Hệ thống chỉ lưu SHA-256 và 4 ký tự cuối.</span><span class="i18n-en">Treat MCP_TOKEN like a password: whoever has it can load / delete your knowledge. Only its SHA-256 and last 4 characters are stored.</span></li>
 					<li data-astro-cid-l7fpniif><span class="i18n-vi">Lộ hoặc mất token: ⚙ → Nạp từ API &amp; MCP → Cấp lại token (hoặc nút &quot;Cấp token mới&quot; ở phần MCP trên). Token cũ hết hiệu lực ngay — cài lại cho các AI client.</span><span class="i18n-en">Leaked or lost: ⚙ → Load from API &amp; MCP → Reissue token (or &quot;Issue a new token&quot; in the MCP section above). The old one stops at once — set up your AI clients again.</span></li>
 					<li data-astro-cid-l7fpniif><span class="i18n-vi">owner trong đoạn nhúng KHÔNG phải bí mật — nó chỉ cho phép đọc kho để trả lời khách. Ghi / xoá luôn cần token hoặc đăng nhập.</span><span class="i18n-en">The owner in the embed code is NOT a secret — it only lets the assistant read your base to answer visitors. Writes / deletes always need the token or a sign-in.</span></li>
-					<li data-astro-cid-l7fpniif><span class="i18n-vi">Hết kỳ thanh toán còn 3 ngày ân hạn; sau đó trợ lý nhúng và MCP ngừng phục vụ kho của bạn cho tới khi gia hạn.</span><span class="i18n-en">There are 3 grace days past the billing period; after that the embedded assistant and MCP stop serving your knowledge until you renew.</span></li>
+					<li data-astro-cid-l7fpniif><span class="i18n-vi">Khai báo site của bạn: ⚙ → Nạp từ API &amp; MCP → Site được nhúng (mỗi dòng 1 tên miền). Khi đã khai, ai copy đoạn nhúng sang site khác thì trợ lý không chạy ở đó. Chưa khai = chạy ở mọi site.</span><span class="i18n-en">Declare your sites: ⚙ → Load from API &amp; MCP → Embed sites (one domain per line). Once set, a copy of your embed code on another site does not run there. None set = it runs on every site.</span></li>
+					<li data-astro-cid-l7fpniif><span class="i18n-vi">Hết kỳ thanh toán còn 3 ngày ân hạn; sau đó trợ lý nhúng tự ẩn và MCP ngừng phục vụ kho của bạn. Gia hạn là tự bật lại, không cần thao tác gì.</span><span class="i18n-en">There are 3 grace days past the billing period; after that the embedded assistant hides itself and MCP stops serving your knowledge. Renewing switches both back on by itself.</span></li>
 				</ul>
 			</section>
 
@@ -921,7 +982,7 @@ const langCookie = "en";
 					<dt data-astro-cid-l7fpniif><span class="i18n-vi">Báo 402</span><span class="i18n-en">It says 402</span></dt>
 					<dd data-astro-cid-l7fpniif><span class="i18n-vi">Gói đã hết hạn — gia hạn rồi mở ⚙ một lần để làm mới. Ở Thư ký / phòng ban, 402 nghĩa là tài khoản đang ở Starter — cần Pro.</span><span class="i18n-en">The plan has lapsed — renew it, then open ⚙ once to refresh. On the Secretary / departments, 402 means the account is on Starter — Pro is needed.</span></dd>
 					<dt data-astro-cid-l7fpniif><span class="i18n-vi">Không thấy nút trợ lý trên site</span><span class="i18n-en">No assistant button on my site</span></dt>
-					<dd data-astro-cid-l7fpniif><span class="i18n-vi">Thẻ script phải có type=&quot;module&quot;; nền tảng phải cho phép chèn script (một số trình tạo web chặn ở gói miễn phí). Mở Console của trình duyệt xem lỗi tải file.</span><span class="i18n-en">The script tag needs type=&quot;module&quot;; your platform must allow custom scripts (some site builders block them on free tiers). Check the browser console for a load error.</span></dd>
+					<dd data-astro-cid-l7fpniif><span class="i18n-vi">Thẻ script phải có type=&quot;module&quot;; nền tảng phải cho phép chèn script (một số trình tạo web chặn ở gói miễn phí). Mở Console của trình duyệt: &quot;hidden on this site — hub_domain&quot; = site chưa có trong Site được nhúng; &quot;hub_expired&quot; = gói đã hết hạn; &quot;hub_disabled&quot; = đã tắt nhúng.</span><span class="i18n-en">The script tag needs type=&quot;module&quot;; your platform must allow custom scripts (some site builders block them on free tiers). Open the browser console: &quot;hidden on this site — hub_domain&quot; = the site is not in Embed sites; &quot;hub_expired&quot; = the plan has lapsed; &quot;hub_disabled&quot; = embedding is off.</span></dd>
 					<dt data-astro-cid-l7fpniif><span class="i18n-vi">Không có email token</span><span class="i18n-en">No token email</span></dt>
 					<dd data-astro-cid-l7fpniif><span class="i18n-vi">Đăng nhập ở /system/ecommerce → Tư vấn → ⚙ → Nạp từ API &amp; MCP → Kích hoạt MCP (token hiện 1 lần), hoặc dùng nút &quot;Cấp token mới&quot; ở phần MCP.</span><span class="i18n-en">Sign in at /system/ecommerce → Consult → ⚙ → Load from API &amp; MCP → Activate MCP (the token shows once), or use &quot;Issue a new token&quot; in the MCP section.</span></dd>
 				</dl>
@@ -929,7 +990,7 @@ const langCookie = "en";
 		</article>
 	</div>
 
-	<script type="module" src="/_astro/docs.astro_astro_type_script_index_0_lang.fWS-BWyw.js"></script>
+	<script type="module" src="/_astro/docs.astro_astro_type_script_index_0_lang.B_vunPFN.js"></script>
         </div>
 			  <!-- Footer -->
         <footer class="relative w-full border-t border-base-content/10">
