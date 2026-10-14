@@ -11,6 +11,21 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://chatzui.com/system/ecommerce/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/system/education/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/system/fnb/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://chatzui.com/system/legal/terms/</loc>
     <lastmod>2026-10-12T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
@@ -39,5 +54,35 @@
     <lastmod>2026-10-12T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/food/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/hotel/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/service/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/movie/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/radar/app/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

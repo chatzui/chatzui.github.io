@@ -9,6 +9,12 @@
 - [AI Operations Pricing](https://chatzui.com/system/pricing/): Choose Starter or Pro, pay with PayPal, and manage the plan you bought.
 - [AI Operations knowledge base (JSON)](https://chatzui.com/data/system.json): plans, prices, features and the full guide, in English and Vietnamese
 
+## AI workspaces by industry
+
+- [AI-Ecommerce](https://chatzui.com/system/ecommerce/): An AI Secretary and 9 AI departments for online stores: product research, listings, SEO content, customer service and fulfilment. Try it free.
+- [AI-Education](https://chatzui.com/system/education/): An AI Secretary and 9 AI departments for schools and training centres: course design, enrolment marketing, scheduling and learner support. Try it free.
+- [AI-F&B](https://chatzui.com/system/fnb/): An AI Secretary and 9 AI departments for restaurants, cafés and food brands: menu development, marketing, ordering, kitchen operations and food safety. Try it free.
+
 ## Legal
 
 - [Terms of Service](https://chatzui.com/system/legal/terms/): These terms are an agreement between you and GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY ("we", "us") for the use of AI Operations at chatzui.com — including the svc-aide consultant, the svc-talk AI Secretary, the AI departments, the MCP server and all related features (the "Service"). By creating an account, buying a plan or using the Service, you agree to these terms, the Privacy Policy, the Billing & Refund Policy, the Acceptable Use Policy and the Data Processing Addendum.
@@ -16,3 +22,12 @@
 - [Billing, Cancellation & Refund Policy](https://chatzui.com/system/legal/refund/): This policy applies to the paid AI Operations Plans (Starter, Pro) purchased at chatzui.com/system/pricing.
 - [Acceptable Use Policy](https://chatzui.com/system/legal/acceptable-use/): This policy applies to everyone using AI Operations, including consultants you embed on your website and any content you load. It supplements the Terms of Service.
 - [Data Processing Addendum (DPA)](https://chatzui.com/system/legal/dpa/): This addendum forms part of the Terms of Service and applies when GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY ("Processor") processes personal data on behalf of a customer ("Customer") — in knowledge bases, work given to the Secretary/departments, and visitors' questions on consultants the Customer embeds on its website. Where it conflicts with the Terms of Service on personal data, this addendum prevails.
+
+## Everyday — thông tin theo quốc gia
+
+- [Everyday](https://chatzui.com/radar/): Quán ăn, khách sạn, phim và dịch vụ theo quốc gia: Việt Nam, Nhật Bản, Hàn Quốc, Mỹ, Anh, Trung Quốc, Đài Loan — cập nhật tự động mỗi ngày.
+- [Ăn uống](https://chatzui.com/radar/food/): Quán ăn, quán cà phê ở Việt Nam, Nhật Bản, Hàn Quốc, Mỹ, Anh… và công thức nấu ăn dễ làm.
+- [Khách sạn](https://chatzui.com/radar/hotel/): Khách sạn và giá phòng tham khảo theo quốc gia: Hà Nội, Tokyo, Seoul, New York, Luân Đôn…
+- [Dịch vụ](https://chatzui.com/radar/service/): Danh bạ đặt vé máy bay, xe khách, tàu hỏa và thuê xe tự lái tại Việt Nam.
+- [Phim](https://chatzui.com/radar/movie/): Phim và chương trình lên sóng hôm nay theo quốc gia: lịch chiếu, diễn viên, tóm tắt.
+- [Trending](https://chatzui.com/radar/app/): Bản đồ trend theo quốc gia và lĩnh vực — sản phẩm, video, chủ đề đang lên, cập nhật liên tục.
