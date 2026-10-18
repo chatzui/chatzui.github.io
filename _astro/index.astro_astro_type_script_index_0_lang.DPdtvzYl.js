@@ -1,1 +1,0 @@
-import"./svc-everyday.D3oIbk_e.js";
