@@ -1,18 +1,18 @@
-import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}from"./lit.DdxAWBw5.js";import"./iconify-icon.BQKUsOMK.js";import"./web-button.CCcr9NnS.js";import{C as a,S as n}from"./util.CY6kFoG4.js";import"./web-fab.DV1Z2bBF.js";import"./web-popover.BQOfZx8x.js";import"./web-avatar.wlZVUw0h.js";import"./web-text.BxifyJ0d.js";import{r as o}from"./sectors.BaJ4_iqg.js";import{t as l}from"./command.BBDam8WT.js";import{s as r}from"./conductor.B6bp_-mz.js";import"./web-toggle.CD2ffXtX.js";import{C as d,E as c,S as h,T as p,_ as u,a as g,b as m,c as f,d as v,f as b,g as _,h as k,i as $,l as y,m as w,n as x,o as j,p as O,r as S,s as T,t as I,u as P,v as C,w as A,x as J,y as E}from"./trial.C3_DRxp4.js";import{t as D}from"./tensor-api.C2pHhDdm.js";var B="secretary",N=new Set(["running","review","stale","error"]),R=class extends s{static styles=e(g);static properties={view:{type:Object},jobs:{type:Array},topic:{type:String},faces:{type:Object},outlines:{type:Object},pending:{type:Object},pdfJob:{type:String},lang:{type:String},ui:{type:String},theme:{type:String},noVerdict:{type:Boolean,attribute:"no-verdict"},_unfold:{state:!0}};constructor(){super(),this.view=null,this.jobs=[],this.topic="",this.faces={},this.outlines={},this.pending=new Set,this.pdfJob="",this.lang="vi",this.ui="pastel",this.theme="",this.noVerdict=!1,this._unfold=!1}_name(t){return this.faces?.[t]?.title||this.view?.titles?.[t]?.[this.lang]||this.view?.titles?.[t]?.vi||t}_emit(t,i){i&&this.dispatchEvent(new CustomEvent(t,{detail:{jobId:i},bubbles:!0,composed:!0}))}_stage(t){const i=this.view?.stage;if(i!==B)return i||"";const e=t.find(t=>t.fn===B)?.job;return"awaiting_review"===e?.status?"context":"done"!==e?.status||e.approved?B:"routing"}_pct({fn:t,state:i,job:e}){return"approved"===i?100:O(m(this.outlines?.[t],e))}render(){const t=P(this.lang),e=p(this.view,this.jobs),s=d(this.view),a=this._stage(e),n=e.find(t=>t.fn===B)?.job??this.jobs[0],o=e.filter(t=>"approved"===t.state).length,l=e.length?Math.round(e.reduce((t,i)=>t+this._pct(i),0)/e.length):0,r=e.filter(t=>"waiting"===t.state),c=r.length>=3,h=c?e.filter(t=>"waiting"!==t.state):e,u="routing"===a&&s?s.plan.run:[],g="routing"===a?J(this.view,t=>this.faces?.[t]?.title,this.lang):"",m=this.noVerdict?null:this.view?.verdict;return i`
+import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}from"./lit.DdxAWBw5.js";import"./iconify-icon.BQKUsOMK.js";import"./web-button.CCcr9NnS.js";import{C as a,S as n}from"./util.CY6kFoG4.js";import"./web-fab.DV1Z2bBF.js";import"./web-popover.BQOfZx8x.js";import"./web-avatar.wlZVUw0h.js";import"./web-text.BxifyJ0d.js";import{r as o}from"./sectors.CrpvWC3a.js";import{t as l}from"./command.BBDam8WT.js";import{s as r}from"./conductor.B6bp_-mz.js";import"./web-toggle.CD2ffXtX.js";import{C as d,E as c,S as h,T as p,_ as u,a as g,b as m,c as f,d as b,f as v,g as _,h as $,i as k,l as y,m as w,n as x,o as j,p as O,r as S,s as T,t as I,u as P,v as C,w as A,x as J,y as E}from"./trial.BFDJiVz6.js";import{t as D}from"./tensor-api.C2pHhDdm.js";var B="secretary",R=new Set(["running","review","stale","error"]),N=class extends s{static styles=e(g);static properties={view:{type:Object},jobs:{type:Array},topic:{type:String},faces:{type:Object},outlines:{type:Object},pending:{type:Object},pdfJob:{type:String},lang:{type:String},ui:{type:String},theme:{type:String},noVerdict:{type:Boolean,attribute:"no-verdict"},_unfold:{state:!0}};constructor(){super(),this.view=null,this.jobs=[],this.topic="",this.faces={},this.outlines={},this.pending=new Set,this.pdfJob="",this.lang="vi",this.ui="pastel",this.theme="",this.noVerdict=!1,this._unfold=!1}_name(t){return this.faces?.[t]?.title||this.view?.titles?.[t]?.[this.lang]||this.view?.titles?.[t]?.vi||t}_emit(t,i){i&&this.dispatchEvent(new CustomEvent(t,{detail:{jobId:i},bubbles:!0,composed:!0}))}_stage(t){const i=this.view?.stage;if(i!==B)return i||"";const e=t.find(t=>t.fn===B)?.job;return"awaiting_review"===e?.status?"context":"done"!==e?.status||e.approved?B:"routing"}_pct({fn:t,state:i,job:e}){return"approved"===i?100:O(m(this.outlines?.[t],e))}render(){const t=P(this.lang),e=p(this.view,this.jobs),s=d(this.view),a=this._stage(e),n=e.find(t=>t.fn===B)?.job??this.jobs[0],o=e.filter(t=>"approved"===t.state).length,l=e.length?Math.round(e.reduce((t,i)=>t+this._pct(i),0)/e.length):0,r=e.filter(t=>"waiting"===t.state),c=r.length>=3,h=c?e.filter(t=>"waiting"!==t.state):e,u="routing"===a&&s?s.plan.run:[],g="routing"===a?J(this.view,t=>this.faces?.[t]?.title,this.lang):"",m=this.noVerdict?null:this.view?.verdict;return i`
             <div class="cd-card is-task is-click" @click=${()=>this._emit("open-job",n?.id)}>
                 <div class="cd-task-head">
                     <div class="cd-task-text">
                         <div class="cd-title cd-clamp">${this.topic}</div>
                         <div class="cd-chips">
-                            ${a?v(t.stage[a]??a,T[a]):""}
-                            ${m?v(t.verdict[m]??m,y[m]):""}
+                            ${a?b(t.stage[a]??a,T[a]):""}
+                            ${m?b(t.verdict[m]??m,y[m]):""}
                             <span class="cd-count">${t.approvedOf(o,e.length)}</span>
                         </div>
                     </div>
                     <div class="cd-ring ${100===l?"is-done":""}" style=${_({"--p":String(l)})}
                         role="img" aria-label=${`${l}%`}><span>${l}%</span></div>
                 </div>
-                ${w(e.map(t=>({state:k(t.state),label:this._name(t.fn)})))}
+                ${w(e.map(t=>({state:$(t.state),label:this._name(t.fn)})))}
                 <div class="cd-list">
                     ${h.map(i=>this._row(i,s,t))}
                     ${c?this._fold(r,t.waitingGroup(r.length),!0):""}
@@ -41,9 +41,14 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                 @click=${i=>{i.stopPropagation(),this._emit("pdf-job",t.id)}}>
                 <iconify-icon class=${s?"is-spin":""} icon=${s?"ri:loader-4-line":"ri:file-pdf-2-line"}></iconify-icon>
             </button>
-        `}_row(t,e,s){const{fn:a,state:n,job:o,missing:l}=t,r=this._name(a),d=this.outlines?.[a],c=this._pct(t),h=a===e?.routing.lead,p=h?"lead":e&&a in e.routing.levels?e.routing.levels[a]:null,u=f[n]??"neutral",g=N.has(n)&&c<100,m=!!o&&"done"===o.status&&!o.approved&&a!==B&&!d?.review,v=!!o&&this.pending?.has(o.id),_=t=>{t.stopPropagation(),this._emit("open-job",o?.id)},k=(t,e,s,a,n)=>i`
+        `}_record(t,e,s){if(!t?.approved||!e?.recordable)return"";const a=!!t.createdPostId,n=!a&&this.pending?.has(t.id),o=(a?s.recorded:s.record).replace("{table}",e.output?.table??"");return i`
+            <button class="cd-pdf cd-record ${a?"is-saved":""}" title=${o} aria-label=${o} ?disabled=${a||n}
+                @click=${i=>{i.stopPropagation(),this._emit("record-job",t.id)}}>
+                <iconify-icon class=${n?"is-spin":""} icon=${n?"ri:loader-4-line":"ri:database-2-line"}></iconify-icon>
+            </button>
+        `}_row(t,e,s){const{fn:a,state:n,job:o,missing:l}=t,r=this._name(a),d=this.outlines?.[a],c=this._pct(t),h=a===e?.routing.lead,p=h?"lead":e&&a in e.routing.levels?e.routing.levels[a]:null,u=f[n]??"neutral",g=R.has(n)&&c<100,m=!!o&&"done"===o.status&&!o.approved&&a!==B&&!d?.review,b=!!o&&this.pending?.has(o.id),_=t=>{t.stopPropagation(),this._emit("open-job",o?.id)},$=(t,e,s,a,n)=>i`
             <web-button type=${s} color=${e} height="26px" prefix=${a} ui=${this.ui} theme=${this.theme}
-                ?loading=${v} ?disabled=${v}
+                ?loading=${b} ?disabled=${b}
                 @click=${t=>{t.stopPropagation(),this._emit(n,o.id)}}>${t}</web-button>
         `;return i`
             <div class="cd-item ${"waiting"===n?"is-waiting":""}" role=${o?"button":"presentation"} tabindex=${o?"0":"-1"}
@@ -64,13 +69,19 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                         <span class="cd-item-state" data-tone=${u}>${s.state[n]??n}</span>
                         ${g?i`<span>${c}%</span>`:""}
                     </div>
-                    ${g?b(c,"error"===n?"error":"primary"):""}
+                    ${g?v(c,"error"===n?"error":"primary"):""}
                 </div>
                 <div class="cd-row-side">
-                    ${"error"===n?k(s.retry,"error","soft","ri:refresh-line","retry-job"):m?k(s.approve,"primary","fill","ri:check-line","approve-job"):"approved"===n?i`${this._pdf(o,s)}<iconify-icon class="cd-ok" icon="ri:checkbox-circle-fill"></iconify-icon>`:o?i`<iconify-icon class="cd-go" icon="ri:arrow-right-s-line"></iconify-icon>`:""}
+                    ${"error"===n?$(s.retry,"error","soft","ri:refresh-line","retry-job"):m?$(s.approve,"primary","fill","ri:check-line","approve-job"):"approved"===n?i`${this._record(o,d,s)}${this._pdf(o,s)}<iconify-icon class="cd-ok" icon="ri:checkbox-circle-fill"></iconify-icon>`:o?i`<iconify-icon class="cd-go" icon="ri:arrow-right-s-line"></iconify-icon>`:""}
                 </div>
             </div>
-        `}};customElements.get("svc-task-card")||customElements.define("svc-task-card",R);var V={vi:{why:"Vai trò",takes:"Nhận bàn giao",gives:"Gửi bàn giao",none:"chưa có",needsCheck:"cần xác minh",more:"Xem thêm",less:"Thu gọn",resumeText:"Chờ duyệt để chạy bước tiếp",approveText:"Xong — duyệt để giao kết quả",signOff:t=>`Đã được ${t} xem và đồng ý`,signOffName:"Họ tên người đã duyệt"},en:{why:"Role",takes:"Takes",gives:"Hands off",none:"not yet",needsCheck:"re-check",more:"More",less:"Less",resumeText:"Approve to run the next step",approveText:"Done — approve to hand it off",signOff:t=>`Reviewed and agreed by ${t}`,signOffName:"Name of the reviewer"}},z={APPROVED:"success",REQUIRES_VERIFICATION:"warning"},F=(t,i)=>(t??[]).filter(t=>t.kind===i&&"SUPERSEDED"!==t.status).sort((t,i)=>i.version-t.version)[0],M=class extends s{static styles=e(g);static properties={job:{type:Object},outline:{type:Object},view:{type:Object},face:{type:Object},why:{type:String},approvable:{type:Boolean},busy:{type:Boolean},lang:{type:String},ui:{type:String},theme:{type:String},_more:{state:!0},_signOffOk:{state:!0},_signOffBy:{state:!0}};constructor(){super(),this.job=null,this.outline=null,this.view=null,this.face=null,this.why="",this.approvable=!1,this.busy=!1,this.lang="vi",this.ui="pastel",this.theme="",this._more=!1,this._signOffOk=!1,this._signOffBy=""}willUpdate(t){t.has("job")&&t.get("job")?.id!==this.job?.id&&(this._more=!1,this._signOffOk=!1,this._signOffBy="")}updated(){this.toggleAttribute("collapsed",!this._more)}get _fn(){return String(this.job?.division??"").split(".")[1]??""}get _pausedText(){if("awaiting_review"!==this.job.status)return null;const t=this.outline.steps?.find(t=>Number(t.id)===Number(this.job.pausedStepId));return"text"===t?.type?t:null}get _canApprove(){return!("done"!==this.job.status||this.job.approved||!this.outline.output&&!this.outline.produces?.length)}get _signOffReady(){return!this.outline.review||this._signOffOk&&this._signOffBy.trim().length>=2}_stepState(t){const i=this.job,e=i.fields??{};return("image"===t.type?e.pics||"skip"===i.imageChoice:(t.calls??[]).every(t=>c(t,e)))||i.approved?"done":i.status===`step${t.id}`||Number(i.pausedStepId)===Number(t.id)?i.error?"error":"active":"todo"}_emit(t,i={}){this.dispatchEvent(new CustomEvent(t,{detail:i,bubbles:!0,composed:!0}))}_approve(){this._signOffReady&&this._emit("approve",this.outline.review?{expertReview:{confirmed:!0,by:this._signOffBy.trim()}}:{})}render(){if(!this.job||!this.outline)return i``;const t={...P(this.lang),...V[this.lang]??V.vi},e=this._fn,s=this.face?.title||this.outline.title?.[this.lang]||this.outline.title?.vi||e,a=A(this.view?.fns?.find(t=>t.jobId===this.job.id),this.job),n=d(this.view),o=n&&e in n.routing.levels?e===n.routing.lead?"lead":n.routing.levels[e]:null,l=m(this.outline,this.job),r=(this.outline.steps??[]).map(t=>({state:this._stepState(t),label:t[this.lang]??t.vi}));return i`
+        `}};customElements.get("svc-task-card")||customElements.define("svc-task-card",N);var V={vi:{why:"Vai trò",takes:"Nhận bàn giao",gives:"Gửi bàn giao",none:"chưa có",needsCheck:"cần xác minh",more:"Xem thêm",less:"Thu gọn",resumeText:"Chờ duyệt để chạy bước tiếp",approveText:"Xong — duyệt để giao kết quả",signOff:t=>`Đã được ${t} xem và đồng ý`,signOffName:"Họ tên người đã duyệt"},en:{why:"Role",takes:"Takes",gives:"Hands off",none:"not yet",needsCheck:"re-check",more:"More",less:"Less",resumeText:"Approve to run the next step",approveText:"Done — approve to hand it off",signOff:t=>`Reviewed and agreed by ${t}`,signOffName:"Name of the reviewer"}},z={APPROVED:"success",REQUIRES_VERIFICATION:"warning"},F=(t,i)=>(t??[]).filter(t=>t.kind===i&&"SUPERSEDED"!==t.status).sort((t,i)=>i.version-t.version)[0],M=class extends s{static styles=e(g);static properties={job:{type:Object},outline:{type:Object},view:{type:Object},face:{type:Object},why:{type:String},approvable:{type:Boolean},busy:{type:Boolean},lang:{type:String},ui:{type:String},theme:{type:String},_more:{state:!0},_signOffOk:{state:!0},_signOffBy:{state:!0}};constructor(){super(),this.job=null,this.outline=null,this.view=null,this.face=null,this.why="",this.approvable=!1,this.busy=!1,this.lang="vi",this.ui="pastel",this.theme="",this._more=!1,this._signOffOk=!1,this._signOffBy=""}willUpdate(t){t.has("job")&&t.get("job")?.id!==this.job?.id&&(this._more=!1,this._signOffOk=!1,this._signOffBy="")}updated(){this.toggleAttribute("collapsed",!this._more)}get _fn(){return String(this.job?.division??"").split(".")[1]??""}get _pausedText(){if("awaiting_review"!==this.job.status)return null;const t=this.outline.steps?.find(t=>Number(t.id)===Number(this.job.pausedStepId));return"text"===t?.type?t:null}get _canApprove(){return!("done"!==this.job.status||this.job.approved||!this.outline.output&&!this.outline.produces?.length)}get _signOffReady(){return!this.outline.review||this._signOffOk&&this._signOffBy.trim().length>=2}_stepState(t){const i=this.job,e=i.fields??{};return("image"===t.type?e.pics||"skip"===i.imageChoice:(t.calls??[]).every(t=>c(t,e)))||i.approved?"done":i.status===`step${t.id}`||Number(i.pausedStepId)===Number(t.id)?i.error?"error":"active":"todo"}_emit(t,i={}){this.dispatchEvent(new CustomEvent(t,{detail:i,bubbles:!0,composed:!0}))}_approve(){this._signOffReady&&this._emit("approve",this.outline.review?{expertReview:{confirmed:!0,by:this._signOffBy.trim()}}:{})}_rfRecord(t){if(!this.job.approved||!this.outline.recordable)return"";const e=!!this.job.createdPostId,s=!e&&this.busy,a=(e?t.recorded:t.record).replace("{table}",this.outline.output?.table??"");return i`
+            <button class="cd-icon-btn cd-record ${e?"is-saved":""}" title=${a} aria-label=${a} ?disabled=${e||s}
+                @click=${()=>this._emit("record")}>
+                <iconify-icon class=${s?"cd-spin":""}
+                    icon=${s?"ri:loader-4-line":"ri:database-2-line"}></iconify-icon>
+            </button>
+        `}render(){if(!this.job||!this.outline)return i``;const t={...P(this.lang),...V[this.lang]??V.vi},e=this._fn,s=this.face?.title||this.outline.title?.[this.lang]||this.outline.title?.vi||e,a=A(this.view?.fns?.find(t=>t.jobId===this.job.id),this.job),n=d(this.view),o=n&&e in n.routing.levels?e===n.routing.lead?"lead":n.routing.levels[e]:null,l=m(this.outline,this.job),r=(this.outline.steps??[]).map(t=>({state:this._stepState(t),label:t[this.lang]??t.vi}));return i`
             <div class="cd-card is-job">
                 <div class="cd-head">
                     <div class="cd-who">
@@ -78,13 +89,14 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                         <div class="cd-who-text">
                             <div class="cd-title cd-ellipsis">${s}</div>
                             <div class="cd-chips">
-                                ${v(t.state[a]??a,f[a])}
+                                ${b(t.state[a]??a,f[a])}
                                 <span class="cd-count">${l.done}/${l.total}</span>
                             </div>
                         </div>
                     </div>
                     <div class="cd-head-side">
-                        ${o?v(t.level[o],j[o]):""}
+                        ${o?b(t.level[o],j[o]):""}
+                        ${this._rfRecord(t)}
                         <button class="cd-icon-btn" aria-expanded=${this._more?"true":"false"}
                             title=${this._more?t.less:t.more} aria-label=${this._more?t.less:t.more}
                             @click=${()=>{this._more=!this._more}}>
@@ -98,10 +110,10 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                 <slot></slot>
             </div>
         `}_rfMore(t){const e=this.view?[...this.outline.needs??[],...(this.outline.uses??[]).filter(t=>F(this.view.artifacts,t))]:[],s=this.view?(this.outline.produces??[]).map(t=>t.kind):[];return i`
-            ${this.why?i`<div class="cd-section"><span class="cd-label">${t.why}</span><span class="cd-text">${$(this.why)}</span></div>`:""}
+            ${this.why?i`<div class="cd-section"><span class="cd-label">${t.why}</span><span class="cd-text">${k(this.why)}</span></div>`:""}
             ${e.length?i`<div class="cd-section"><span class="cd-label">${t.takes}</span>${this._handoffs(e,t)}</div>`:""}
             ${s.length?i`<div class="cd-section"><span class="cd-label">${t.gives}</span>${this._handoffs(s,t)}</div>`:""}
-        `}_handoffs(t,e){const s=t=>this.view?.kinds?.[t]?.[this.lang]||this.view?.kinds?.[t]?.vi||t;return i`<div class="cd-chips">${t.map(t=>{const i=F(this.view?.artifacts,t),a=i?"REQUIRES_VERIFICATION"===i.status?` · ${e.needsCheck}`:` · v${i.version}`:` · ${e.none}`;return v(`${s(t)}${a}`,i?z[i.status]??"neutral":"muted")})}</div>`}_rfAction(t){if(!this.approvable)return"";const e=this._pausedText;if(!e&&!this._canApprove)return"";const s=!e&&this.outline.review;return i`
+        `}_handoffs(t,e){const s=t=>this.view?.kinds?.[t]?.[this.lang]||this.view?.kinds?.[t]?.vi||t;return i`<div class="cd-chips">${t.map(t=>{const i=F(this.view?.artifacts,t),a=i?"REQUIRES_VERIFICATION"===i.status?` · ${e.needsCheck}`:` · v${i.version}`:` · ${e.none}`;return b(`${s(t)}${a}`,i?z[i.status]??"neutral":"muted")})}</div>`}_rfAction(t){if(!this.approvable)return"";const e=this._pausedText;if(!e&&!this._canApprove)return"";const s=!e&&this.outline.review;return i`
             ${s?i`
                 <div class="cd-signoff">
                     <label class="cd-signoff-check">
@@ -166,7 +178,8 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                         why=${r} ?approvable=${!t.approved} ?busy=${this._pendingJobs.has(t.id)}
                         lang=${this.lang} ui=${this.ui} theme=${this.theme}
                         @approve=${i=>this._dhApproveAndClose(t.id,i.detail?.expertReview)}
-                        @resume-step=${()=>this._talk.resumeStep(t.id)}>${this._rfDetailActions(t,e)}</svc-job-card>
+                        @resume-step=${()=>this._talk.resumeStep(t.id)}
+                        @record=${()=>this._talk.record(t.id)}>${this._rfDetailActions(t,e)}</svc-job-card>
                     <svc-progress .outline=${e.outline} .doc=${t} .runningSub=${this._runningSub} externalActions
                         .routing=${o} .faces=${this._comFaces} .titles=${s?.titles||{}}
                         @routing-change=${i=>this._talk.setRouting(t.id,i.detail)}
@@ -192,7 +205,8 @@ import{n as t}from"./rolldown-runtime.Bpd4S2KM.js";import{a as i,c as e,t as s}f
                         @open-job=${t=>this._dhPreview(t.detail.jobId)}
                         @approve-job=${t=>this._talk.approve(t.detail.jobId)}
                         @retry-job=${t=>this._talk.retry(t.detail.jobId)}
-                        @pdf-job=${t=>this._dhJobPdf(t.detail.jobId)}></svc-task-card>
+                        @pdf-job=${t=>this._dhJobPdf(t.detail.jobId)}
+                        @record-job=${t=>this._talk.record(t.detail.jobId)}></svc-task-card>
                 </div>
             </div>
         `}_rfDetailActions(t,e){if(!t.task||!t.approved)return"";const s=this._txt,a=this._pendingJobs.has(t.id),n=this._talk.staleOf(t),o=this._talk.canRerun(t)?i`
