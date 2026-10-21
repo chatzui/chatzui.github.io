@@ -1,0 +1,1 @@
+import"./svc-photor.D6Ne4lyn.js";
