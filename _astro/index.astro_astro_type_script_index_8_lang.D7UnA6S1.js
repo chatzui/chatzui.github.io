@@ -1,1 +1,0 @@
-import"./web-rating.RaeEeNVz.js";

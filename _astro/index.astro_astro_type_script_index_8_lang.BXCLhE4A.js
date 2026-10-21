@@ -1,0 +1,1 @@
+import"./web-rating.Bne0ityy.js";

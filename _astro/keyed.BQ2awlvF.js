@@ -1,1 +1,0 @@
-import{n as r}from"./lit.DdxAWBw5.js";import{n as e,t}from"./directive.DQozs3xI.js";import{r as s}from"./directive-helpers.B7fUJHHg.js";var i=t(class extends e{constructor(){super(...arguments),this.key=r}render(r,e){return this.key=r,e}update(r,[e,t]){return e!==this.key&&(s(r),this.key=e),t}});export{i as t};

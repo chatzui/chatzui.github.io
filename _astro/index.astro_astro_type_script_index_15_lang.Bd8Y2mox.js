@@ -1,0 +1,1 @@
+import"./web-breadcrumb.BnpayGgJ.js";

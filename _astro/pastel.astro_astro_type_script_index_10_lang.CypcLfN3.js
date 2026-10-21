@@ -1,0 +1,1 @@
+import"./web-table.DFu0ka4Y.js";
