@@ -1,0 +1,1 @@
+import{n as t,t as e}from"./cookier.C2A61Slr.js";function n(n={}){const a=document.documentElement,g=n.theme??t.get(e.THEME)??a.getAttribute("data-theme")??"light",r=n.lang??t.get(e.LANGUAGE)??a.getAttribute("lang")??"vi";return!1!==n.page&&(a.setAttribute("data-theme",g),a.setAttribute("lang",r)),{theme:g,lang:r}}export{n as pagePrefs};

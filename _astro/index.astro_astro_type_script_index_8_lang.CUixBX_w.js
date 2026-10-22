@@ -1,1 +1,0 @@
-import"./web-rating.KFLtPv9g.js";

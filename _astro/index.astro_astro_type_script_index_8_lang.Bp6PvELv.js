@@ -1,0 +1,1 @@
+import"./web-rating.CGOYO-ZE.js";
