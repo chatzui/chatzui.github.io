@@ -57,12 +57,18 @@
   </url>
   <url>
     <loc>https://chatzui.com/system/legal/zap-share/</loc>
-    <lastmod>2026-10-22T00:00:00.000Z</lastmod>
+    <lastmod>2026-10-23T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://chatzui.com/system/legal/zap-support/</loc>
+    <lastmod>2026-10-23T00:00:00.000Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://chatzui.com/system/legal/zap-terms/</loc>
     <lastmod>2026-10-23T00:00:00.000Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
