@@ -15,6 +15,11 @@
 - [AI-Education](https://chatzui.com/system/education/): An AI Secretary and 9 AI departments for schools and training centres: course design, enrolment marketing, scheduling and learner support. Try it free.
 - [AI-F&B](https://chatzui.com/system/fnb/): An AI Secretary and 9 AI departments for restaurants, cafés and food brands: menu development, marketing, ordering, kitchen operations and food safety. Try it free.
 
+## Chrome extensions
+
+- [Zap Share – Cross-post to Facebook, Instagram, Threads, LinkedIn & X (Chrome extension)](https://chatzui.com/system/extension/zap-share/): Chrome extension to cross-post the page you are on to Facebook (profile, Page, Group), Instagram, Threads, LinkedIn and X in one click — many posts at once, scheduled up to 7 days, content never leaves your browser. 3 free posts.
+- [Zap Support – AI Auto Reply for Messenger, Zalo & Web Chat (Chrome extension)](https://chatzui.com/system/extension/zap-support/): AI chatbot Chrome extension that answers customers 24/7 on Messenger, Zalo, Facebook Business Suite and any web chat from your own product knowledge — with your GPT, Claude or Gemini key, or an AI on your computer. 1-day free trial.
+
 ## Legal
 
 - [Terms of Service](https://chatzui.com/system/legal/terms/): These terms are an agreement between you and GOLDEN KEY IT SOLUTIONS JOINT STOCK COMPANY ("we", "us") for the use of AI Operations at chatzui.com — including the svc-aide consultant, the svc-talk AI Secretary, the AI departments, the MCP server and all related features (the "Service"). By creating an account, buying a plan or using the Service, you agree to these terms, the Privacy Policy, the Billing & Refund Policy, the Acceptable Use Policy and the Data Processing Addendum.
